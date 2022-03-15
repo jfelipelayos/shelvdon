@@ -1,8 +1,64 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Search.css'
+import axios from 'axios'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { BookResultCard } from '../../BookResultCard/BookResultCard'
+
 
 export const Search = () => {
+  const [bookName, setBookName] = useState('');
+  const [searchResult, setSearchResult] = useState([])
+
+  const handleInputChange = (event) => {
+    event.preventDefault();
+    setBookName(event.target.value);
+  }
+
+  const handleSearchButton = (event) => {
+    event.preventDefault();
+
+    const options = {
+      method: 'GET',
+      url: `https://hapi-books.p.rapidapi.com/search/${bookName}`,
+      headers: {
+        'x-rapidapi-host': 'hapi-books.p.rapidapi.com',
+        'x-rapidapi-key': '29832e245cmsh84cf072a4dfae26p1d7ffajsnd0805f8691e0'
+      }
+    };
+
+    axios.request(options).then(function (response) {
+      console.log(response.data);
+      setSearchResult(response.data);
+    }).catch(function (error) {
+      console.error(error);
+    });
+  }
+
+
   return (
-    <div>Search</div>
+    <section className='search'>
+      <div className="search-form">
+        <input
+          className="add-input"
+          type="text"
+          placeholder="Book name"
+          value={bookName}
+          onChange={handleInputChange}
+        />
+        <button onClick={handleSearchButton}><FontAwesomeIcon style={{marginRight: '10px'}} icon={faMagnifyingGlass}/></button>
+      </div>
+      <div className="search-results">
+      {
+       searchResult.length > 0 && (
+          <ul className="search-results-list">
+            {searchResult.map(book => (
+              <BookResultCard book={book} />
+            ))}
+          </ul>
+        )
+      }
+      </div>
+    </section>
   )
 }

@@ -11,12 +11,12 @@ import { Search } from './components/Sections/Search/Search'
 
 
 function App() {
-  const [currentView, setCurrentView] = useState('home')
+  const [currentView, setCurrentView] = useState('search')
   return (
     <ShelvdonApp>
       <NavMenu currentView={currentView} setCurrentView={setCurrentView}/>
       <MainView>
-        <ul>
+        <ul className='mainview-menu'>
           {
             currentView === 'home' ? (<Home/>) : 
             currentView === 'favorites' ? (<Favorites/>) :
