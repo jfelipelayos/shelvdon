@@ -1,0 +1,21 @@
+.login-general-card{
+    max-width: 50%;
+    margin: auto;
+    min-height: 500px;
+    padding: 20px;
+}
+
+.login-form{
+    display: block;
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+    border: 2px solid red;
+}
+
+.email-form, .password-form{
+    display: block;
+}
+
+#login-button{
+}
