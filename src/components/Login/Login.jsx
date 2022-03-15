@@ -5,27 +5,24 @@ export const Login = () => {
 
     return (
         <section>
-            <div class="card mb-3 login-general-card">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src={GirlWithBooks} class="img-fluid rounded-start" alt="girl-with-books-stack" />
+            <div className="card mb-3 login-general-card">
+                <div className="row g-0">
+                    <div className="col-md-5">
+                        <img src={GirlWithBooks} className="img-fluid rounded login-image" alt="girl-with-books-stack" />
                     </div>
-                    <div class="col-md-8 login-form">
-                        <form action="">
-                        <div className="email-form">
-                            <label htmlFor="email">Email</label>
-                            <input type="text" name='email' id='email-login' />
-                        </div>
-
-                        <div className="password-form">
-                            <label htmlFor="password">Password</label>
-                            <input type="password" name='password' id='password-login' />
-                        </div>
-
-                        <button type="submit" className='btn btn-success' id='login-button'>Login</button>
-
+                    <div className="col-md-7 col-sm-12">
+                        <form className='login-form'>
+                            <div className="form-group email-form">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
+                                    <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div className="form-group password-form">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password"/>
+                            </div>
+                            <button type="submit" className="btn btn-success login-button">Login</button>
                         </form>
-                        
                     </div>
                 </div>
             </div>

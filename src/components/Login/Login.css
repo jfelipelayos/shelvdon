@@ -1,22 +1,40 @@
 .login-general-card{
     max-width: 50%;
     margin: auto;
-    min-height: 500px;
-    padding: 20px;
+    min-height: 350px;
+    padding: 50px 20px;
 }
 
 .login-form{
     display: block;
-    margin: auto;
     align-items: center;
     justify-items: center;
-    border: 2px solid red;
+    padding: 1.5rem;
+    justify-content: center;
+
+   
 }
 
 .email-form, .password-form{
-    display: block;
+    margin: 15px auto;
 }
 
-#login-button{
-    margin: auto;
+.email-form{
+    margin-top: 0;
 }
+
+.login-button{
+    margin-top: 8px;
+}
+
+@media (max-width: 767px) {
+   .login-button{
+    margin: 2vw 8vw;
+    min-width: 50px;
+   }
+
+   .login-form{
+        padding: 0;
+   }
+}
+
