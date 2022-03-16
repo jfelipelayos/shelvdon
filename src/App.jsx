@@ -6,11 +6,13 @@ import  DashboardPage  from './pages/DashboardPage';
 import  SignupPage  from './pages/SignupPage';
 import  LoginPage  from './pages/LoginPage';
 import NotFoundPage from './pages/NotFoundPage';
+import NavBar from './components/NavBar/NavBar';
 
 
 function App() {
   return (
     <Router>
+      <NavBar/>
       <Routes>
         <Route exact path='/' element={<LandingPage/>}/>
         <Route path='/login' element ={<LoginPage/>}/>
