@@ -14,7 +14,7 @@ export default function DashboardPage(){
       <ShelvdonApp>
         <NavMenu currentView={currentView} setCurrentView={setCurrentView}/>
         <MainView>
-          <ul>
+          <ul className='mainview-menu'>
             {
               currentView === 'home' ? (<Home/>) : 
               currentView === 'favorites' ? (<Favorites/>) :

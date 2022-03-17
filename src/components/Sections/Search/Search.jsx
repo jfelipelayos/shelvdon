@@ -4,11 +4,13 @@ import axios from 'axios'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { BookResultCard } from '../../BookResultCard/BookResultCard'
+import Swal from 'sweetalert2' 
 
 
 export const Search = () => {
   const [bookName, setBookName] = useState('');
   const [searchResult, setSearchResult] = useState([])
+
 
   const handleInputChange = (event) => {
     event.preventDefault();
@@ -16,6 +18,17 @@ export const Search = () => {
   }
 
   const handleSearchButton = (event) => {
+
+    Swal.fire({
+      title: `Searching for "${bookName}"`,
+      html: 'Please wait...',
+      allowEscapeKey: false,
+      allowOutsideClick: false,
+      didOpen: () => {
+        Swal.showLoading()
+      }
+    })
+
     event.preventDefault();
 
     const options = {
@@ -28,8 +41,9 @@ export const Search = () => {
     };
 
     axios.request(options).then(function (response) {
-      console.log(response.data);
+      // console.log(response.data);
       setSearchResult(response.data);
+      Swal.close()
     }).catch(function (error) {
       console.error(error);
     });
