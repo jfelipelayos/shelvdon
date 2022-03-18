@@ -41,9 +41,11 @@
   width: 100%;
   padding: 30px 80px;
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .search-results-list {
   list-style: none;
+  padding: 0px;
 }
