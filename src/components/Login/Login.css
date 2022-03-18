@@ -30,7 +30,6 @@
 @media (max-width: 767px) {
    .login-button{
     margin: 2vw 8vw;
-    min-width: 50px;
    }
 
    .login-form{
