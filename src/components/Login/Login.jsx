@@ -1,10 +1,12 @@
 import './Login.css';
 import GirlWithBooks from '../../assets/images/woman-books.jpg';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
+import swal from "sweetalert2";
+import  { Navigate, useNavigate } from 'react-router-dom'
 import API from '../../assets/api/users.json';
 
 export const Login = () => {
-
+    let navigate = useNavigate();
     const checkEmailCredentials = (value)=>{
         let found = API.users.find(user => user.email === value);
 
@@ -40,8 +42,6 @@ export const Login = () => {
                                     errors.password = 'Password is required';
                                 } else if  (!values.email) {
                                     errors.email = 'Email is required';                           
-                                } else if  (!values.password) {
-                                    errors.password = 'Password is required';
                                 } else if (
                                     !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
                                 ) {
@@ -49,16 +49,34 @@ export const Login = () => {
                                 } else if(checkEmailCredentials(values.email)){
                                     errors.email = 'This user does not exist'
                                 }
-                                /* else if (!/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,32}$/i.test(values.password)){
-                                  errors.password = 'Invalid password. Remember it needs at least: one digit [0-9], one lowercase [a-z], one uppercase [A-Z], one special character and at least 8 characters in length.';
-                               } */
+
+                                const passwordRegex = /(?=.?[A-Z])(?=.?[a-z])(?=.*?[0-9])/;
+                                if (!values.password) {
+                                  errors.password = "Password is required";
+                                } else if (values.password.length < 8) {
+                                  errors.password = "Password must be at leat 8 characters long";
+                                } else if (!passwordRegex.test(values.password)) {
+                                  errors.password =
+                                    "Password must contain at least: one lowercase, one uppercase and one number";
+                                }                            
                                 return errors;
                             }}
-                            onSubmit={(values, { setSubmitting }) => {
-                                setTimeout(() => {
-                                    alert(JSON.stringify(values, null, 2));
+                            onSubmit={(values, errors, { setSubmitting }) => {
+                                setSubmitting(true);
+                                navigate("/home")
+                               /*  if(errors){
                                     setSubmitting(false);
-                                }, 400);
+                                    swal.fire({
+                                        title: "Error",
+                                        text: "Please fill in correct information",
+                                        icon: "error",
+                                        confirmButtonText: "Got it!",
+                                        confirmButtonColor: "#f96332"
+                                    });
+                                }else{
+                                    setSubmitting(true);
+                                    return <Navigate to='/home'  />
+                                } */  
                             }}
                         >
                             {({ isSubmitting }) => (
@@ -69,7 +87,8 @@ export const Login = () => {
                                     <label htmlFor="password">Password</label> 
                                     <Field type="password" name="password" className="form-control" id="exampleInputPassword1" placeholder="Enter password"/>
                                     <ErrorMessage name="password" component="div" style={{ color: 'red', fontWeight: 'bold' }} />
-                                    <button type="submit" disabled={isSubmitting} className="btn btn-success login-button"><a href="/home" style={{color: 'white', textDecoration: 'none', margin: 'auto'}}>Log In </a>
+                                    <button type="submit" disabled={isSubmitting} className="btn btn-success login-button"
+                                    >Log In
                                     </button>
                                 </Form>
                             )}
