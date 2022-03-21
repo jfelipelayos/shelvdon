@@ -26,7 +26,7 @@ export const Login = () => {
     }
 
     return (
-        <section>
+        <section style={{marginTop: '150px'}}>
             <div className="card mb-3 login-general-card" style={{ backgroundColor: '#2e0000', color: 'white', boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px'}}>
                 <div className="row g-0">
                     <div className="col-md-5">
