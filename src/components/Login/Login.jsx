@@ -1,13 +1,16 @@
 import './Login.css';
 import GirlWithBooks from '../../assets/images/woman-books.jpg';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
-import swal from "sweetalert2";
-import  { Navigate, useNavigate } from 'react-router-dom'
+import  { useNavigate } from 'react-router-dom'
 import API from '../../assets/api/users.json';
+
+var CryptoJS = require("crypto-js");
 
 export const Login = () => {
     let navigate = useNavigate();
-    const checkEmailCredentials = (value)=>{
+    let salt = Math.random()*10+'Ant';
+
+    const checkEmail = (value)=>{
         let found = API.users.find(user => user.email === value);
 
         if(found === undefined){
@@ -16,10 +19,10 @@ export const Login = () => {
             return false;        
     }
 
-    const checkPasswordCredentials = (e, c)=>{
-        let checked = API.users.find(user => user.email === e);
+    const checkCredentials = (values)=>{
+       let checked = API.users.find(user => user.email === values.email);
 
-        if(checked !== undefined && checked.password === c){
+        if(checked !== undefined && checked.password === values.password){
             return true;
         }
             return false;        
@@ -46,7 +49,7 @@ export const Login = () => {
                                     !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
                                 ) {
                                     errors.email = 'Invalid email address';
-                                } else if(checkEmailCredentials(values.email)){
+                                } else if(checkEmail(values.email)){
                                     errors.email = 'This user does not exist'
                                 }
 
@@ -58,25 +61,15 @@ export const Login = () => {
                                 } else if (!passwordRegex.test(values.password)) {
                                   errors.password =
                                     "Password must contain at least: one lowercase, one uppercase and one number";
+                                }else if(!checkCredentials(values)){
+                                    errors.password = "Password is incorrect. Please check it and try again";
                                 }                            
                                 return errors;
                             }}
-                            onSubmit={(values, errors, { setSubmitting }) => {
+                            onSubmit={(values, { setSubmitting }) => {
                                 setSubmitting(true);
-                                navigate("/home")
-                               /*  if(errors){
-                                    setSubmitting(false);
-                                    swal.fire({
-                                        title: "Error",
-                                        text: "Please fill in correct information",
-                                        icon: "error",
-                                        confirmButtonText: "Got it!",
-                                        confirmButtonColor: "#f96332"
-                                    });
-                                }else{
-                                    setSubmitting(true);
-                                    return <Navigate to='/home'  />
-                                } */  
+                                sessionStorage.setItem('parsley', CryptoJS.HmacSHA1(values.email, salt))
+                                navigate("/home");   
                             }}
                         >
                             {({ isSubmitting }) => (
@@ -87,7 +80,7 @@ export const Login = () => {
                                     <label htmlFor="password">Password</label> 
                                     <Field type="password" name="password" className="form-control" id="exampleInputPassword1" placeholder="Enter password"/>
                                     <ErrorMessage name="password" component="div" style={{ color: 'red', fontWeight: 'bold' }} />
-                                    <button type="submit" disabled={isSubmitting} className="btn btn-success login-button"
+                                    <button type="submit" disabled={isSubmitting} className="btn btn-success login-button" 
                                     >Log In
                                     </button>
                                 </Form>
