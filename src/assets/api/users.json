@@ -1,13 +1,13 @@
 {
     "users":[
         {
-            "id":1,
+            "id":"1",
             "fullName":"Santiago Betancur G",
             "email":"tiago@bootcamp.com",
             "password": "Test1234"
         },
         {
-            "id":2,
+            "id":"2",
             "fullName":"Paola Cadena",
             "email":"paola@bootcamp.com",
             "password": "Test1234"
