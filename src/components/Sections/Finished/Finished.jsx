@@ -8,7 +8,7 @@ export const Finished = () => {
 
   return (
     <div>
-      <h2>Books to read</h2>
+      <h2>Finished Books</h2>
       <ul>
         {finished.map((book) => (
           <li>{book.name}</li>
