@@ -1,0 +1,39 @@
+.signup-general-card{
+    max-width: 80%;
+    margin: auto;
+    min-height: 350px;
+    padding: 50px 20px;
+    background-color: gray;
+    color: white;
+}
+
+.signup-form{
+    display: flex;
+    flex-flow: row;
+    margin-left: 2rem;
+}
+
+.section-1, .section-2{
+    min-width: 50%;
+    padding: 3%;
+}
+
+.section-3{
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    margin: 0 20%;
+    padding: 0 9%;
+}
+
+.form-group{
+    margin-bottom: 5%;
+}
+.info-text{
+    color: white;
+    margin: 3% 25%;
+}
+.signup-button{
+    width: 30%;
+    margin: 5% 30%;
+}

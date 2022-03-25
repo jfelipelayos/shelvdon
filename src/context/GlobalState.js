@@ -12,8 +12,8 @@ export const GlobalProvider = (props) => {
     const [state, dispatch] = useReducer(AppReducer, initialState);
 
     useEffect(() => {
-        localStorage.setItem('watchlist', JSON.stringify(state.watchlist))
-        localStorage.setItem('watched', JSON.stringify(state.watched))
+        localStorage.setItem('toread', JSON.stringify(state.toread))
+        localStorage.setItem('finished', JSON.stringify(state.finished))
     }, [state])
 
     const addBookToToRead = (book) => {

@@ -1,0 +1,16 @@
+{
+    "users":[
+        {
+            "id":"1",
+            "fullName":"Santiago Betancur",
+            "email":"tiago@bootcamp.com",
+            "password": "Test1234"
+        },
+        {
+            "id":"2",
+            "fullName":"Felipe Layos",
+            "email":"felipe@bootcamp.com",
+            "password": "Test1234"
+        }    
+    ]
+}

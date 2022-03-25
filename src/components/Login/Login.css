@@ -1,8 +1,23 @@
 .login-general-card{
-    max-width: 50%;
+    max-width: 55%;
     margin: auto;
-    min-height: 350px;
+    min-height: 320px;
     padding: 50px 20px;
+}
+
+.form-group{
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width:767px){
+    .login-general-card{
+        max-width: 82%;
+    }
+
+    .image-login-container{
+        margin: auto;
+        margin-bottom: 5%;
+    }
 }
 
 .login-form{
@@ -10,9 +25,8 @@
     align-items: center;
     justify-items: center;
     padding: 1.5rem;
-    justify-content: center;
-
-   
+    padding-top: 0.5rem;
+    justify-content: center;   
 }
 
 .email-form, .password-form{
@@ -25,15 +39,12 @@
 
 .login-button{
     margin-top: 8px;
+    width: 50%;
+    margin: 5% 25%;
 }
 
 @media (max-width: 767px) {
-   .login-button{
-    margin: 2vw 8vw;
-    min-width: 50px;
-   }
-
-   .login-form{
+      .login-form{
         padding: 0;
    }
 }
