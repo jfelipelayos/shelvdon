@@ -7,7 +7,6 @@ import  SignupPage  from './pages/SignupPage';
 import  LoginPage  from './pages/LoginPage';
 import NotFoundPage from './pages/NotFoundPage';
 
-
 function App() {
   return (
     <Router>

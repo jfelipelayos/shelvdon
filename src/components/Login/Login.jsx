@@ -85,7 +85,7 @@ export const Login = () => {
                                         <Field type="password" name="password" className="form-control" id="loginInputPassword" placeholder="Enter password" />
                                         <ErrorMessage name="password" component="div" style={{ color: 'red', fontWeight: 'bold' }} />
                                     </div>
-                                    <p>If you have not registered yet, enter <a href='/signup' style={{ color: 'yellowgreen' }}>here</a></p>
+                                    <p>If you have not registered yet, enter <a href='/signup' style={{ color: 'fuchsia', fontWeight: 'bold' }}>here</a></p>
                                     <button type="submit" disabled={isSubmitting} className="btn btn-success login-button"
                                     >Log In
                                     </button>
