@@ -2,14 +2,14 @@
     "users":[
         {
             "id":"1",
-            "fullName":"Santiago Betancur G",
+            "fullName":"Santiago Betancur",
             "email":"tiago@bootcamp.com",
             "password": "Test1234"
         },
         {
             "id":"2",
-            "fullName":"Paola Cadena",
-            "email":"paola@bootcamp.com",
+            "fullName":"Felipe Layos",
+            "email":"felipe@bootcamp.com",
             "password": "Test1234"
         }    
     ]
