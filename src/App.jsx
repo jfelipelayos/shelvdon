@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import LandingPage  from './pages/LandingPage';
 import  DashboardPage  from './pages/DashboardPage';
 import  SignupPage  from './pages/SignupPage';
-import  LoginPage  from './pages/LoginPage';
 import NotFoundPage from './pages/NotFoundPage';
+import  LoginPage  from './pages/LoginPage';
 
 function App() {
   return (
