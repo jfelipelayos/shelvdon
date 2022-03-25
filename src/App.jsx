@@ -1,32 +1,26 @@
-import React, {useState} from 'react'
-import { NavMenu } from './components/NavMenu/NavMenu'
-import { ShelvdonApp } from './components/ShelvdonApp/ShelvdonApp'
-import { MainView } from './components/MainView/MainView'
-import { Home } from './components/Sections/Home/Home'
-import { Favorites } from './components/Sections/Favorites/Favorites'
-import { ToRead } from './components/Sections/ToRead/ToRead'
-import { Finished } from './components/Sections/Finished/Finished'
-import { Search } from './components/Sections/Search/Search'
-
-
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import LandingPage  from './pages/LandingPage';
+import  DashboardPage  from './pages/DashboardPage';
+import  SignupPage  from './pages/SignupPage';
+import NotFoundPage from './pages/NotFoundPage';
+import  LoginPage  from './pages/LoginPage';
+import { GlobalProvider } from './context/GlobalState'
 
 function App() {
-  const [currentView, setCurrentView] = useState('home')
   return (
-    <ShelvdonApp>
-      <NavMenu currentView={currentView} setCurrentView={setCurrentView}/>
-      <MainView>
-        <ul>
-          {
-            currentView === 'home' ? (<Home/>) : 
-            currentView === 'favorites' ? (<Favorites/>) :
-            currentView === 'toread' ? (<ToRead/>) :
-            currentView === 'finished' ? (<Finished/>) :
-            currentView === 'search' ? (<Search/>) : (<div>404 Section not found</div>)
-          }
-        </ul>
-      </MainView>
-    </ShelvdonApp>
+    <GlobalProvider>
+      <Router>
+        <Routes>
+          <Route exact path='/' element={<LandingPage/>}/>
+          <Route path='/login' element ={<LoginPage/>}/>
+          <Route path='/signup' element = {<SignupPage/>}/>
+          <Route path='/home' element={<DashboardPage/>}/>
+          <Route path='*' element={<NotFoundPage/>}/>
+        </Routes>
+      </Router>
+    </GlobalProvider>
   )
 }
 
