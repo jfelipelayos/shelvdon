@@ -6,18 +6,21 @@ import  DashboardPage  from './pages/DashboardPage';
 import  SignupPage  from './pages/SignupPage';
 import NotFoundPage from './pages/NotFoundPage';
 import  LoginPage  from './pages/LoginPage';
+import { GlobalProvider } from './context/GlobalState'
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route exact path='/' element={<LandingPage/>}/>
-        <Route path='/login' element ={<LoginPage/>}/>
-        <Route path='/signup' element = {<SignupPage/>}/>
-        <Route path='/home' element={<DashboardPage/>}/>
-        <Route path='*' element={<NotFoundPage/>}/>
-      </Routes>
-    </Router>
+    <GlobalProvider>
+      <Router>
+        <Routes>
+          <Route exact path='/' element={<LandingPage/>}/>
+          <Route path='/login' element ={<LoginPage/>}/>
+          <Route path='/signup' element = {<SignupPage/>}/>
+          <Route path='/home' element={<DashboardPage/>}/>
+          <Route path='*' element={<NotFoundPage/>}/>
+        </Routes>
+      </Router>
+    </GlobalProvider>
   )
 }
 

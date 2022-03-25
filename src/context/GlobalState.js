@@ -40,7 +40,7 @@ export const GlobalProvider = (props) => {
         <GlobalContext.Provider value={{
             toread: state.toread,
             finished: state.finished,
-            addBookToToRead,
+            addBookToToRead: addBookToToRead,
             removeBookFromToRead,
             addBookToFinished,
             moveBookToFinished,
