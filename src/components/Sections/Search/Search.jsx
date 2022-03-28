@@ -67,7 +67,7 @@ export const Search = () => {
        searchResult.length > 0 && (
           <ul className="search-results-list">
             {searchResult.map(book => (
-              <BookResultCard book={book} />
+              <BookResultCard book={book} isFinished={false} />
             ))}
           </ul>
         )

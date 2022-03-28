@@ -30,7 +30,7 @@ export default function DashboardPage(){
               currentView === 'favorites' ? (<Favorites/>) :
               currentView === 'toread' ? (<ToRead/>) :
               currentView === 'finished' ? (<Finished/>) :
-              currentView === 'search' ? (<Search/>) : (<div>404 Section not found</div>)
+              currentView === 'search' ? (<Search/>) : navigate("/login");
             }
           </ul>
         </MainView>

@@ -2,9 +2,9 @@ import React, { useContext } from 'react'
 import './BookResultCard.css'
 import { GlobalContext } from '../../context/GlobalState'
 
-export const BookResultCard = ({book}) => {
+export const BookResultCard = ({book, isFinished}) => {
 
-  const { toread, finished, addBookToToRead, addBookToFinished  } = useContext(GlobalContext)
+  const { toread, finished, addBookToToRead, addBookToFinished, removeBookFromFinished  } = useContext(GlobalContext)
 
   return (
     <li key={book.book_id} className="book-card">
@@ -20,7 +20,12 @@ export const BookResultCard = ({book}) => {
         </div>
         <div className="info-buttons">
           <button onClick={() => {addBookToToRead(book)}}>Add to ToRead</button>
-          <button onClick={() => {addBookToFinished(book)}}>Add to Finished</button>
+          {
+            isFinished 
+            ? <button onClick={() => {removeBookFromFinished(book)}}>Remove from list</button>
+            : <button onClick={() => {addBookToFinished(book)}}>Add to Finished</button>
+          }
+          
         </div>
       </div>
     </li>
