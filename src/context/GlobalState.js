@@ -35,7 +35,7 @@ export const GlobalProvider = (props) => {
     const removeBookFromFinished = (book) => {
         dispatch({ type: 'REMOVE_BOOK_FROM_FINISHED', payload: book.book_id })
     }
-
+    
     return (
         <GlobalContext.Provider value={{
             toread: state.toread,
