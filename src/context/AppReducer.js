@@ -9,8 +9,7 @@ const AppReducer = (state, action) => {
       case "ADD_BOOK_TO_FINISHED":
           return {
               ...state,
-              toread: state.toread.filter((book) => book.book_id !== action.payload.book_id
-              ),
+              toread: state.toread.filter((book) => book.book_id !== action.payload.book_id),
               finished: [action.payload, ...state.finished],
           }
       case 'REMOVE_BOOK_FROM_TOREAD':
@@ -30,6 +29,11 @@ const AppReducer = (state, action) => {
           return {
               ...state,
               finished: state.finished.filter(book => book.book_id !== action.payload)
+          };
+      case "ADD_BOOK_TO_FAVORITE":
+          return {
+            ...state,
+            favorite: [action.payload, ...state.favorite]
           }
       case 'ADD_BOOK_TO_FAVORITES':
             return {

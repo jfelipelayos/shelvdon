@@ -1,9 +1,13 @@
 import React, { useContext } from "react";
-import "./Finished.css";
+
+//@context
 import { GlobalContext } from "../../../context/GlobalState";
 
 //@component
 import { BookFinishedCard } from "../../BookFinishedCard/BookFinishedCard";
+
+//@style
+import "./Finished.css";
 
 export const Finished = () => {
   const { finished } = useContext(GlobalContext);

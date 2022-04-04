@@ -49,7 +49,11 @@
   margin-bottom: 5px;
 }
 
-.info-buttons > button:hover {
+.info-buttons > button:disabled {
+  background-color: #C5C5C5 ;
+}
+
+.info-buttons > button:enabled:hover {
   background-color: #9a4444d7;
   cursor: pointer;
 }
