@@ -64,7 +64,7 @@ export const Signup = () => {
     return <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={onSubmit}>
         {
             formik => {
-                return <article style={{ marginTop: '150px' }}>
+                return <article style={{ margin: '4% 0' }}>
                     <div className="card mb-3 signup-general-card">
                         <div className="row g-0">
                             <div className="col-md-4">

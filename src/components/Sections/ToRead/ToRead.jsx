@@ -8,7 +8,7 @@ export const ToRead = () => {
 
   console.log(toread);
   return (
-    <div>
+    <div style={{margin:'1.5rem'}}>
       <h2>Books to read</h2>
       <AlphabetMenu/>
       <ul style={{marginTop:'10%'}}>
