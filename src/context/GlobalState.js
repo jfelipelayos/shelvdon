@@ -4,7 +4,6 @@ import AppReducer from './AppReducer'
 const initialState = {
     toread: localStorage.getItem('toread') ? JSON.parse(localStorage.getItem('toread')) : [],
     finished: localStorage.getItem('finished') ? JSON.parse(localStorage.getItem('finished')) : [],
-    favorite: localStorage.getItem('favorite') ? JSON.parse(localStorage.getItem('favorite')) : [],
 };
 
 export const GlobalContext = createContext(initialState);
@@ -15,7 +14,6 @@ export const GlobalProvider = (props) => {
     useEffect(() => {
         localStorage.setItem('toread', JSON.stringify(state.toread))
         localStorage.setItem('finished', JSON.stringify(state.finished))
-        localStorage.setItem('favorite', JSON.stringify(state.favorite))
     }, [state])
 
     const addBookToToRead = (book) => {
@@ -54,7 +52,6 @@ export const GlobalProvider = (props) => {
         <GlobalContext.Provider value={{
             toread: state.toread,
             finished: state.finished,
-            favorite: state.favorite,
             addBookToToRead: addBookToToRead,
             removeBookFromToRead,
             addBookToFinished,
