@@ -11,6 +11,12 @@
             "fullName":"Felipe Layos",
             "email":"felipe@bootcamp.com",
             "password": "Test1234"
+        },
+        {
+            "id": "3",
+            "fullName": "Paola Cadena",
+            "email": "paola@bootcamp.com",
+            "password": "Test1234"
         }    
     ]
 }

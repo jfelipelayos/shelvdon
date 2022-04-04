@@ -1,7 +1,17 @@
+import React, {useContext, useEffect} from 'react'
+//@vendor
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
+//@context
+import { GlobalContext } from '../../context/GlobalState'
+
+//@component
+import BookShouldBeDisabled from '../../helper/BookShouldBeDisabled'
+
 export const AdjustedCarousel = ({ moviesData }) => {
+  const {favorite, addBookToFavorite} = useContext(GlobalContext);
+
   return (
     <Carousel
       additionalTransfrom={0}
@@ -67,9 +77,17 @@ export const AdjustedCarousel = ({ moviesData }) => {
             <p className="card-text">{movie.name}</p>
           </div>
           <div className="card-footer">
-            <a href="#" className="btn btn-primary ">
+            <button
+              disabled={BookShouldBeDisabled(movie, favorite)} 
+              className={
+                BookShouldBeDisabled(movie, favorite)
+                ? "btn btn-secondary"
+                : "btn btn-primary"
+              }
+              // onClick={addBookToFavorite(movie)}
+              >             
               Add to Favorites
-            </a>
+            </button>
           </div>
         </div>
       ))}

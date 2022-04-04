@@ -1,10 +1,15 @@
 import React, { useContext } from 'react'
-import './BookResultCard.css'
+
+//@context
 import { GlobalContext } from '../../context/GlobalState'
 
-export const BookResultCard = ({book, isFinished}) => {
+//@component
+import BookShouldBeDisabled from '../../helper/BookShouldBeDisabled'
+import './BookResultCard.css'
 
-  const { toread, finished, addBookToToRead, addBookToFinished, removeBookFromFinished  } = useContext(GlobalContext)
+
+export const BookResultCard = ({book, isFinished}) => {
+   const { toread, finished, addBookToToRead, addBookToFinished, removeBookFromFinished  } = useContext(GlobalContext)
 
   return (
     <li key={book.book_id} className="book-card">
@@ -19,13 +24,20 @@ export const BookResultCard = ({book, isFinished}) => {
           <span><strong>Rating: </strong>{book.rating}</span>
         </div>
         <div className="info-buttons">
-          <button onClick={() => {addBookToToRead(book)}}>Add to ToRead</button>
+          <button
+            disabled={BookShouldBeDisabled(book, toread)}
+            onClick={() => {addBookToToRead(book)}}>Add to ToRead
+          </button>
           {
             isFinished 
-            ? <button onClick={() => {removeBookFromFinished(book)}}>Remove from list</button>
-            : <button onClick={() => {addBookToFinished(book)}}>Add to Finished</button>
-          }
-          
+            ? <button
+                onClick={() => {removeBookFromFinished(book)}}>Remove from list
+              </button>
+            : <button
+                disabled={BookShouldBeDisabled(book, finished)}
+                onClick={() => {addBookToFinished(book)}}>Add to Finished
+              </button>
+          }          
         </div>
       </div>
     </li>
