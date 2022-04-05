@@ -33,7 +33,7 @@ const AppReducer = (state, action) => {
       case "ADD_BOOK_TO_FAVORITE":
           return {
             ...state,
-            favorite: [action.payload, ...state.favorite]
+            favorites: [action.payload, ...state.favorites]
           }
       case 'ADD_BOOK_TO_FAVORITES':
             return {
