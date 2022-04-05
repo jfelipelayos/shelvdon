@@ -4,11 +4,11 @@ import { GlobalContext } from '../../../context/GlobalState'
 
 
 export const Favorites = () => {
-  const { favorites } = useContext(GlobalContext)
+  const { favorites: favorite } = useContext(GlobalContext)
   return (
     <div>Favorite Books
       <ul>
-        {favorites.map((book) => (
+        {favorite.map((book) => (
             <li>{book.name}</li>
           ))}
       </ul>

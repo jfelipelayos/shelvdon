@@ -4,7 +4,7 @@ import AppReducer from './AppReducer'
 const initialState = {
     toread: localStorage.getItem('toread') ? JSON.parse(localStorage.getItem('toread')) : [],
     finished: localStorage.getItem('finished') ? JSON.parse(localStorage.getItem('finished')) : [],
-    favorite: localStorage.getItem('favorite') ? JSON.parse(localStorage.getItem('favorite')) : [],
+    favorites: localStorage.getItem('favorites') ? JSON.parse(localStorage.getItem('favorites')) : [],
 };
 
 export const GlobalContext = createContext(initialState);
@@ -15,7 +15,7 @@ export const GlobalProvider = (props) => {
     useEffect(() => {
         localStorage.setItem('toread', JSON.stringify(state.toread))
         localStorage.setItem('finished', JSON.stringify(state.finished))
-        localStorage.setItem('favorite', JSON.stringify(state.favorite))
+        localStorage.setItem('favorites', JSON.stringify(state.favorites))
     }, [state])
 
     const addBookToToRead = (book) => {
@@ -45,22 +45,19 @@ export const GlobalProvider = (props) => {
     const removeBookFromFavorites = (book) => {
         dispatch({ type: 'REMOVE_BOOK_FROM_FAVORITES', payload: book.book_id })
     }
-    
-    const addBookToFavorite = (book) => {
-        dispatch({ type: 'ADD_BOOK_TO_FAVORITE', payload: book.book_id })
-    }
 
     return (
         <GlobalContext.Provider value={{
             toread: state.toread,
             finished: state.finished,
-            favorite: state.favorite,
+            favorites: state.favorites,
             addBookToToRead: addBookToToRead,
             removeBookFromToRead,
             addBookToFinished,
             moveBookToFinished,
             removeBookFromFinished,
-            addBookToFavorite
+            addBookToFavorites,
+            removeBookFromFavorites
         }}>
             {props.children}
         </GlobalContext.Provider>
