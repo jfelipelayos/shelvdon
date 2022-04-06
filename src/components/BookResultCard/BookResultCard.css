@@ -12,6 +12,7 @@
 .book-card-header {
   display: flex;
   margin-bottom: 20px;
+  justify-content: space-between;
 }
 
 .book-card-img {
@@ -20,7 +21,11 @@
   margin-right: 30px;
 }
 
-.book-card-header > h2 {
+.book-card-title {
+  display: flex;
+}
+
+.book-card-title > h2 {
   font-size: 20px;
   margin-top: 5px;
 }
@@ -37,16 +42,16 @@
 
 .info-buttons {
   margin-top: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 .info-buttons > button {
   margin-right: 15px;
   border: none;
-  background-color: #9A4444;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 10px;
   border-radius: 5px;
-  margin-bottom: 5px;
 }
 
 .info-buttons > button:disabled {
@@ -54,6 +59,6 @@
 }
 
 .info-buttons > button:enabled:hover {
-  background-color: #9a4444d7;
+  color: #9A4444;
   cursor: pointer;
 }

@@ -9,6 +9,7 @@ import { BookFinishedCard } from "../../BookFinishedCard/BookFinishedCard";
 //@style
 import "./Finished.css";
 
+
 export const Finished = () => {
   const { finished } = useContext(GlobalContext);
 
