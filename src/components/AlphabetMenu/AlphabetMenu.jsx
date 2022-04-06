@@ -5,12 +5,12 @@ export default function AlphabetMenu({ index, sendDataToParent }) {
     let indexes = [...Array(26)].map((_, i) => String.fromCharCode(i + 97).toUpperCase());
     
   return (
-    <div style={{position: 'fixed', width:'20vw'}}>
-        <hr style={{width:'100vw'}}/>
+    <div style={{width:'85vw', background:'white'}}>
+        <hr style={{width:'85vw'}}/>
         {indexes.map((index)=>{
-                  return <span style={{marginLeft:'11.5%', fontWeight: 'bold'}}><a href={`#${index}`} id={index} onClick={()=>sendDataToParent(index)}>{index}</a></span>
+                  return <span style={{marginLeft:'2.8%', fontWeight: 'bold'}}><a href={`#${index}`} id={index} onClick={()=>sendDataToParent(index)}>{index}</a></span>
               })}
-              <hr style={{width:'100vw'}}/>
+        <hr style={{width:'85vw'}}/>
     </div>
   )
 }
