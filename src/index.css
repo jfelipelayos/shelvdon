@@ -17,3 +17,12 @@ code {
   padding: 0;
   box-sizing: border-box;
 }
+
+a{
+  list-style: none;
+  color: black !important;
+}
+
+a:hover{
+  color: #9A4444 !important;
+}

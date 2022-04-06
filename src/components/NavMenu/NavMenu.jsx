@@ -6,7 +6,7 @@ import { faBookOpen } from '@fortawesome/free-solid-svg-icons'
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
-
+import Swal from "sweetalert2"
 
 
 
@@ -14,6 +14,15 @@ export const NavMenu = ({ currentView, setCurrentView }) => {
 
   const handleBtnClick = (section) => {
     setCurrentView(section)
+    if (section === "signout") {
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Succesfully logged out',
+        showConfirmButton: false,
+        timer: 1500
+      })
+    }
   }
 
   return (
