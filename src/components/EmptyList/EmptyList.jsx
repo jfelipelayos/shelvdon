@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { BookFinishedCard } from '../BookFinishedCard/BookFinishedCard';
 
 export default function EmptyList(props) {
     console.log(props.list)
+    let [itemsCount, setItemsCount] = useState(0)
 
-    if (props.index !== '') {
+    useEffect(()=>{
+      setItemsCount(props.list.length)
+    },[props.list.length])
+
+    if (props.index !== '' || itemsCount===0) {
         return <h2>Empty List</h2>;
       }
       return <section>{props.list.map((book) => (

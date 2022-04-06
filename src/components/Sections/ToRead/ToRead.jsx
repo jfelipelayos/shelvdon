@@ -3,6 +3,7 @@ import './ToRead'
 import { GlobalContext } from '../../../context/GlobalState'
 import AlphabetMenu from '../../AlphabetMenu/AlphabetMenu'
 import { BookFinishedCard } from '../../BookFinishedCard/BookFinishedCard'
+import EmptyList from '../../EmptyList/EmptyList'
 
 export const ToRead = () => {
   const { toread } = useContext(GlobalContext)
@@ -43,7 +44,7 @@ export const ToRead = () => {
               <BookFinishedCard book={book} />
             ))}
           </ul>
-        ) : (<h2>Empty List</h2>)}
+        ) : (<EmptyList index={index} list = {toread}/>)}
       </div>
     </div>
   )
