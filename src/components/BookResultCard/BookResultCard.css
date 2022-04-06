@@ -43,11 +43,11 @@
 .info-buttons {
   margin-top: 15px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .info-buttons > button {
-  margin-right: 15px;
   border: none;
   color: rgb(0, 0, 0);
   padding: 10px;
@@ -55,7 +55,7 @@
 }
 
 .info-buttons > button:disabled {
-  background-color: #C5C5C5 ;
+  color: rgb(182, 182, 182);
 }
 
 .info-buttons > button:enabled:hover {

@@ -7,6 +7,8 @@ import Swal from 'sweetalert2'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { faTrash } from '@fortawesome/free-solid-svg-icons'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+
 
 export const BookFinishedCard = ({book}) => {
 
@@ -52,9 +54,13 @@ export const BookFinishedCard = ({book}) => {
         <div className="book-card-title">
         <h2>{book.name}</h2>
         </div>
-        <div className="info-buttons">
-          <button data-hover="Add to favorites" onClick={() => {handleAddBtn(book)}}><FontAwesomeIcon icon={faHeart} /></button>
-          <button data-hover="Remove from list" onClick={() => {handleDeleteBtn(book)}}><FontAwesomeIcon icon={faTrash} /></button>
+        <div className="info-buttons-finished">
+          <button className='btns' data-hover="Add to favorites" onClick={() => {handleAddBtn(book)}}><FontAwesomeIcon icon={faHeart} /></button>
+          <button className='btns' data-hover="Remove from list" onClick={() => {handleDeleteBtn(book)}}><FontAwesomeIcon icon={faTrash} /></button>
+          <button
+                onClick={() => {removeBookFromFinished(book)}}>
+                  <a href={book.url} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faPlus} /></a>
+              </button>   
         </div>
       </div>
       <div className="book-card-info">
