@@ -3,6 +3,7 @@ import GirlWithBooks from '../../assets/images/woman-books.jpg';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import { useNavigate } from 'react-router-dom'
 import API from '../../assets/api/users.json';
+import Swal from 'sweetalert2'
 
 var CryptoJS = require("crypto-js");
 
@@ -70,6 +71,13 @@ export const Login = () => {
                                 setSubmitting(true);
                                 sessionStorage.setItem('parsley', CryptoJS.HmacSHA1(values.email, salt))
                                 navigate("/home");
+                                Swal.fire({
+                                    position: 'top-end',
+                                    icon: 'success',
+                                    title: 'Successfully logged in',
+                                    showConfirmButton: false,
+                                    timer: 1500
+                                  })
                             }}
                         >
                             {({ isSubmitting }) => (

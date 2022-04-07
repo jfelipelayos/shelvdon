@@ -3,6 +3,7 @@ import './Favorites.css'
 import { GlobalContext } from '../../../context/GlobalState'
 import AlphabetMenu from '../../AlphabetMenu/AlphabetMenu'
 import { BookFinishedCard } from '../../BookFinishedCard/BookFinishedCard'
+import EmptyList from '../../EmptyList/EmptyList'
 
 
 export const Favorites = () => {
@@ -43,7 +44,7 @@ export const Favorites = () => {
               <BookFinishedCard book={book} />
             ))}
           </ul>
-        ) : (<h2>Empty List</h2>)}
+        ) : (<EmptyList index={index} list = {favorite}/>)}
       </div>
     </div>
   )
