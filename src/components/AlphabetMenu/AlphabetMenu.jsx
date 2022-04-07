@@ -8,7 +8,7 @@ export default function AlphabetMenu({ index, sendDataToParent }) {
     <div style={{width:'85vw', background:'white'}}>
         <hr style={{width:'85vw'}}/>
         {indexes.map((index)=>{
-                  return <span style={{marginLeft:'2.8%', fontWeight: 'bold'}}><a href={`#${index}`} id={index} onClick={()=>sendDataToParent(index)}>{index}</a></span>
+                  return <span style={{marginLeft:'2.8%', fontWeight: 'bold'}}><a href={`#${index}`} id={index} onClick={()=>sendDataToParent(index)} key={index}>{index}</a></span>
               })}
         <hr style={{width:'85vw'}}/>
     </div>

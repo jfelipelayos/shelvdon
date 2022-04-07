@@ -1,17 +1,16 @@
-import React, {useContext, useEffect} from 'react'
+import React, { useContext } from 'react';
 //@vendor
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
 //@context
-import { GlobalContext } from '../../context/GlobalState'
+// import { GlobalContext } from '../../context/GlobalState';
 
 //@component
-import BookShouldBeDisabled from '../../helper/BookShouldBeDisabled'
+// import BookShouldBeDisabled from '../../helper/BookShouldBeDisabled';
+import { BookCarouselCard } from '../BookCarouselCard/BookCarouselCard';
 
-export const AdjustedCarousel = ({ moviesData }) => {
-  const {favorite, addBookToFavorite} = useContext(GlobalContext);
-
+export const AdjustedCarousel = ({ booksData }) => {
   return (
     <Carousel
       additionalTransfrom={0}
@@ -60,36 +59,8 @@ export const AdjustedCarousel = ({ moviesData }) => {
       slidesToSlide={1}
       swipeable
     >
-      {moviesData.map((movie) => (
-        <div
-          key={movie.book_id}
-          className="card m-auto"
-          style={{ width: '16rem', height: '28rem' }}
-        >
-          {/* <img src={movie.cover} className="card-img-top" alt="..." /> */}
-          <img
-            src={movie.cover}
-            style={{ width: 'auto', height: '16rem' }}
-            alt="..."
-          />
-          <div className="card-body">
-            <h5 className="card-title">{movie.winning_category}</h5>
-            <p className="card-text">{movie.name}</p>
-          </div>
-          <div className="card-footer">
-            <button
-              disabled={BookShouldBeDisabled(movie, favorite)} 
-              className={
-                BookShouldBeDisabled(movie, favorite)
-                ? "btn btn-secondary"
-                : "btn btn-primary"
-              }
-              // onClick={addBookToFavorite(movie)}
-              >             
-              Add to Favorites
-            </button>
-          </div>
-        </div>
+      {booksData.map((book) => (
+        <BookCarouselCard book={book} key={book.book_id} />
       ))}
     </Carousel>
   );
