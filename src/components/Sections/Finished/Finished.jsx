@@ -1,6 +1,6 @@
 import { faBroom } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 
 //@context
 import { GlobalContext } from "../../../context/GlobalState";
