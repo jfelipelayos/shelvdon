@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { BookFinishedCard } from '../BookFinishedCard/BookFinishedCard';
 
 export default function EmptyList(props) {
-    console.log(props.list)
     let [itemsCount, setItemsCount] = useState(0)
 
     useEffect(()=>{

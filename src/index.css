@@ -18,11 +18,11 @@ code {
   box-sizing: border-box;
 }
 
-a{
+.link{
   list-style: none;
-  color: black !important;
+  color: black;
 }
 
-a:hover{
-  color: #9A4444 !important;
+.link:hover{
+  color: #9A4444;
 }

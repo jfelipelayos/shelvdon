@@ -59,7 +59,7 @@ export const BookFinishedCard = ({book}) => {
           <button className='btns' data-hover="Remove from list" onClick={() => {handleDeleteBtn(book)}}><FontAwesomeIcon icon={faTrash} /></button>
           <button
                 onClick={() => {removeBookFromFinished(book)}}>
-                  <a href={book.url} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faPlus} /></a>
+                  <a href={book.url} className='link' target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faPlus} /></a>
               </button>   
         </div>
       </div>
