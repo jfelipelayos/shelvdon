@@ -1,0 +1,102 @@
+.main-banner-img{ 
+    max-height: 350px;
+    opacity: 0.4; 
+}
+
+.main-banner-overlay{
+    margin-top: 8%;
+    margin-left: 5%;
+}
+
+.main-banner-overlay h1, .section-banner-overlay h1{
+    font-size: 5vw;
+}
+
+.main-banner-button{
+    padding: 1% 2%;
+    margin-left: 70%;
+}
+
+.main-banner-link{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.section-banner-box{
+    margin: 5%;
+}
+
+.section-banner-img{
+    max-height: 350px;
+    opacity: 0.4;
+}
+
+.section-banner-overlay{
+    margin-top: 8%;
+    margin-left: 5%;
+}
+
+.section-banner-button{
+    padding: 1% 2%;
+    margin-left: 70%;
+}
+
+.section-banner-link{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.footer{
+    margin-top: 70vh;
+}
+
+
+@media screen and (max-width:942px) {
+    .main-banner-img{
+        max-height: 45vh;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .main-banner-section, .section-banner-section{
+        display: block;
+        max-width: 60%;
+    }
+
+    .main-banner-section{
+        display: block;
+        max-width: 60%;
+    }
+
+    .main-banner-overlay{
+        display: flex;
+        flex-flow: row;
+    }
+    .section-banner-overlay{
+        margin-top: 1rem;
+    }
+
+    .main-banner-overlay h3, .section-banner-overlay h3{
+        font-size: 12px;
+    }
+
+    .main-banner-button, .section-banner-button{
+        margin: auto;
+        font-size: 12px;
+        max-height: 40px;
+    }
+
+    .section-banner-button{
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+   footer{
+       position: absolute;
+       bottom: 0;
+       width: 100%;
+   }
+}

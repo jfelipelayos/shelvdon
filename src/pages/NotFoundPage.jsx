@@ -3,6 +3,9 @@ import { faHouse } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useNavigate } from 'react-router-dom';
 import Img404 from '../assets/images/shelvdon-404v2-removebg.png';
+import '../styles/NotFoundPage.css';
+import { Header } from '../components/Header/Header';
+import { Footer } from '../components/Footer/Footer';
 
 export default function NotFoundPage() {
   let navigate = useNavigate();
@@ -12,10 +15,15 @@ export default function NotFoundPage() {
   }
   return (
     <section>
-        <article style={{margin: 'auto', width:'60%', background: '#BDBDBD', borderRadius: '8px', marginTop:'5%'}}>
-          <img src={Img404} alt="404-notFound" height={'500px'}/>
-          <button style={{background:'#9A4444', borderRadius: '50px', padding:'0.8%', position: 'absolute', top: '450px', left: '520px'}} onClick={handleClick}><FontAwesomeIcon style={{ height: '20px' }} icon={faHouse} /></button>
+      <Header/>
+
+        <article className='notfound-section'>
+          <img src={Img404} alt="404-notFound" height={'500px'} className="notfound-section-img"/>
+          <button className='notfound-section-button' onClick={handleClick}><FontAwesomeIcon style={{ height: '20px' }} icon={faHouse} /></button>
         </article>
-    </section>
+
+        <Footer/>
+        </section>
+
   )
 }
