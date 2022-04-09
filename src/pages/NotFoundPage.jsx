@@ -22,7 +22,7 @@ export default function NotFoundPage() {
           <button className='notfound-section-button' onClick={handleClick}><FontAwesomeIcon style={{ height: '20px' }} icon={faHouse} /></button>
         </article>
 
-        <Footer/>
+        <Footer id='footer-notfound'/>
         </section>
 
   )

@@ -33,7 +33,7 @@ export default function LandingPage() {
           </div>
         </div>
       </article>
-      <Footer className='footer'></Footer>
+      <Footer id='footer-landing'></Footer>
     </section>
   )
 }
