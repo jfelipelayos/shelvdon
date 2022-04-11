@@ -1,10 +1,10 @@
 .signup-general-card{
-    max-width: 80%;
+    color: white;
+    background-color: gray;
     margin: auto;
+    max-width: 80%;
     min-height: 350px;
     padding: 50px 20px;
-    background-color: gray;
-    color: white;
 }
 
 .signup-form{
@@ -15,15 +15,7 @@
 
 .section-1, .section-2{
     min-width: 50%;
-    padding: 3%;
-}
-
-.section-3{
-    display: flex;
-    flex-flow: column;
-    margin: auto;
-    margin: 0 20%;
-    padding: 0 9%;
+    padding: 0 3%;
 }
 
 .form-group{
@@ -31,9 +23,46 @@
 }
 .info-text{
     color: white;
-    margin: 3% 25%;
+    display: block;
+    margin: 0.5% 5%;
 }
 .signup-button{
+    margin: 1% 30%;
     width: 30%;
-    margin: 5% 30%;
+}
+.section-3{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login-back-button{
+    margin-top: 1%;
+}
+
+/* @ medium */
+@media screen and (max-width:550px) {
+    .signup-form{
+        margin-left: unset;
+    }
+    .section-1, .section-2{
+        padding: 0;
+    }
+}
+
+/* @ small */
+@media screen and (max-width: 376px) {
+    .signup-form{
+        width: 100%;
+        margin-left: unset;
+    }
+    .section-1, .section-2{
+        padding: 0;
+    }
+    .info-text, 
+    .signup-button,
+    .login-back-button,
+    .input-text-size{
+        font-size: 10px;
+    }
 }
