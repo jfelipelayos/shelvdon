@@ -2,7 +2,7 @@
     "users":[
         {
             "id":"1",
-            "fullName":"Santiago Betancur",
+            "fullName":"Tiago Betancur",
             "email":"tiago@bootcamp.com",
             "password": "Test1234"
         },
@@ -17,6 +17,12 @@
             "fullName": "Paola Cadena",
             "email": "paola@bootcamp.com",
             "password": "Test1234"
-        }    
+        },
+        {
+            "id": "4",
+            "fullName": "John Uribe",
+            "email": "john@bootcamp.com",
+            "password": "Test1234"
+        }       
     ]
 }

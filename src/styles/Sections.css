@@ -1,0 +1,40 @@
+.subheader-section{ 
+    display: flex;
+    flex-flow: row;
+    margin: 3% 2% 0.5% 2%;
+}
+
+@media screen and (max-width:1305px){
+    .subheader-section{
+        display: block;
+    }
+    .subheader-title-button{
+        position: absolute;
+        top: 25vh;
+        right: 5vw;
+    } 
+}
+
+.subheader-title{
+    margin-left: 1%;
+}
+
+.subheader-title-index{ 
+    font-weight: bold;
+    color: #9A4444;
+    margin-left: 1%;
+    margin-top: -0.5%;
+}
+
+.subheader-title-button{
+    background: #9A4444;
+    border-radius: 25px;
+    padding: 0 1%; 
+    color: white; 
+    margin: -0.5% 0 0.5% 50%;
+    font-weight: bold; 
+}
+
+.subsection-list{ 
+    margin-top: 5%; 
+}
