@@ -15,15 +15,19 @@ export const BookCarouselCard = ({ book }) => {
   return (
     <div
       key={book.book_id}
-      className="card m-auto"
-      style={{ width: '16rem', height: 'auto' }}
+      // className="card m-auto"
+      // style={{ width: '16rem', height: 'auto' }}
+      // style={{ width: '100%' }}
     >
       <img
         src={book.cover}
-        style={{ width: 'auto', height: '16rem' }}
+        // style={{ width: 'auto', height: '16rem' }}
+        style={{ width: '100%' }}
+        // style={{ width: '300px' }}
         alt="..."
       />
-      <div className="card-body">
+      {/* <div className="card-body"> */}
+      <div >
         <h5 className="card-title">{book.winning_category}</h5>
         <p className="card-text text-truncate">{book.name}</p>
       </div>
@@ -35,7 +39,7 @@ export const BookCarouselCard = ({ book }) => {
               ? 'btn btn-outline-secondary my-1 btn-sm'
               : 'btn btn-outline-primary my-1 btn-sm'
           }
-          onClick={addBookToFavorites(book)}
+          onClick={() => addBookToFavorites(book)}
         >
           Add to Favorites
         </button>
@@ -46,7 +50,7 @@ export const BookCarouselCard = ({ book }) => {
               ? 'btn btn-outline-secondary my-1 btn-sm'
               : 'btn btn-outline-primary my-1 btn-sm'
           }
-          onClick={addBookToToRead(book)}
+          onClick={() => addBookToToRead(book)}
         >
           Add to ToRead
         </button>

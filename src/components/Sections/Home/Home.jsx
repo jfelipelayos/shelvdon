@@ -5,6 +5,8 @@ import axios from 'axios';
 
 //@components
 import { AdjustedCarousel } from '../../AdjustedCarousel/AdjustedCarousel';
+import Carousel from '../../Carousel/Carousel';
+import { BookCarouselCard } from '../../BookCarouselCard/BookCarouselCard';
 
 //@style
 import './Home.css';
@@ -38,16 +40,106 @@ export const Home = () => {
         console.error(error);
         setIsLoading(false);
       });
+    // return () => {
+    //   setBooksData([]);
+    // };
   }, []);
 
   return (
-    <div className="mt-4" style={{ maxWidth: '90%' }}>
+    <div>
       {isLoading ? (
         <div>Loading...</div>
       ) : (
-        <AdjustedCarousel
-          booksData={booksData}
-        />
+        <div
+          style={{
+            maxWidth: 1200,
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            marginTop: 64,
+          }}
+        >
+          <Carousel show={3} infiniteLoop={true}>
+            {booksData.map((book) => (
+              <div key={book.book_id}>
+                <div style={{ padding: 8 }}>
+                  <BookCarouselCard book={book} />
+                </div>
+              </div>
+            ))}
+            {/* <div>
+              <div style={{ padding: 8 }}>
+                <img
+                  src="https://via.placeholder.com/300x300"
+                  alt="placeholder"
+                  style={{ width: '100%' }}
+                />
+              </div>
+            </div>
+            <div>
+              <div style={{ padding: 8 }}>
+                <img
+                  src="https://via.placeholder.com/300x300"
+                  alt="placeholder"
+                  style={{ width: '100%' }}
+                />
+              </div>
+            </div>
+            <div>
+              <div style={{ padding: 8 }}>
+                <img
+                  src="https://via.placeholder.com/300x300"
+                  alt="placeholder"
+                  style={{ width: '100%' }}
+                />
+              </div>
+            </div>
+            <div>
+              <div style={{ padding: 8 }}>
+                <img
+                  src="https://via.placeholder.com/300x300"
+                  alt="placeholder"
+                  style={{ width: '100%' }}
+                />
+              </div>
+            </div>
+            <div>
+              <div style={{ padding: 8 }}>
+                <img
+                  src="https://via.placeholder.com/300x300"
+                  alt="placeholder"
+                  style={{ width: '100%' }}
+                />
+              </div>
+            </div>
+            <div>
+              <div style={{ padding: 8 }}>
+                <img
+                  src="https://via.placeholder.com/300x300"
+                  alt="placeholder"
+                  style={{ width: '100%' }}
+                />
+              </div>
+            </div>
+            <div>
+              <div style={{ padding: 8 }}>
+                <img
+                  src="https://via.placeholder.com/300x300"
+                  alt="placeholder"
+                  style={{ width: '100%' }}
+                />
+              </div>
+            </div>
+            <div>
+              <div style={{ padding: 8 }}>
+                <img
+                  src="https://via.placeholder.com/300x300"
+                  alt="placeholder"
+                  style={{ width: '100%' }}
+                />
+              </div>
+            </div> */}
+          </Carousel>
+        </div>
       )}
     </div>
   );
