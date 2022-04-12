@@ -7,9 +7,11 @@ export default function AlphabetMenu({ sendDataToParent }) {
   return (
     <div style={{width:'85vw', background:'white'}}>
         <hr style={{width:'85vw'}}/>
+        <div className='index-letter'>
         {indexes.map((index)=>{
-                  return <span style={{marginLeft:'2.8%', fontWeight: 'bold'}} key={`${index}-span`}><a className='link' href={`#${index}`} id={index} onClick={()=>sendDataToParent(index)}>{index}</a></span>
+                  return <span className='alphabet-menu' key={`${index}-span`}><a className='link' href={`#${index}`} id={index} onClick={()=>sendDataToParent(index)}>{index}</a></span>
               })}
+        </div>
         <hr style={{width:'85vw'}}/>
     </div>
   )

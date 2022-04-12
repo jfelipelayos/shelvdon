@@ -11,7 +11,7 @@
     .subheader-title-button{
         position: absolute;
         top: 25vh;
-        right: 5vw;
+        right: 3vw;
     } 
 }
 
@@ -29,12 +29,37 @@
 .subheader-title-button{
     background: #9A4444;
     border-radius: 25px;
-    padding: 0 1%; 
     color: white; 
     margin: -0.5% 0 0.5% 50%;
     font-weight: bold; 
+    position: absolute;
+    top: 20vh;
+    right: 3vw;
+    padding: 0.5% 1%; 
+
 }
 
 .subsection-list{ 
     margin-top: 5%; 
 }
+
+@media screen and (max-width: 768px) {
+    .subheader-title-button {
+        position: absolute;
+        top: 18vh;
+        right: 3vw;
+    }    
+}
+
+@media screen and (max-width: 445px) {
+    .subheader-title-button {
+        top: 16vh;
+        right: 8vw;
+        padding: 1.5%;
+    }
+    .hide-caption-button-mobile{
+        display: none;
+    }
+}
+
+

@@ -1,0 +1,11 @@
+.alphabet-menu{
+    margin-left:2.8%; 
+    font-weight: bold;
+    
+}
+
+.index-letter{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
