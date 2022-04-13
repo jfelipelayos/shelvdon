@@ -1,16 +1,22 @@
 
-# Shlevdon
-shelvdon description
+![Shelvdon Logo](src/assets/images/Shelvdon-icon.png)
+📖 Book lists manager
+
 ## Features
 
 - Authentication
-
-
+- Book lits managment
+    - Favorite books
+    - Books to read
+    - Finished Books
 
 ## Authors
 
 - [@Santiago Betancur](https://www.github.com/TiagoBG)
-- [@John Uribe](https://www.github.com/johnuribe17)
 - [@Paola Andrea](https://www.github.com/paolandrea18)
+- [@John Uribe](https://www.github.com/johnuribe17)
 - [@Felipe Layos](https://www.github.com/jfelipelayos)
-- [@Sebastian Bernal](https://www.github.com/)
+
+## Demo
+
+https://shelvdon.vercel.app/
