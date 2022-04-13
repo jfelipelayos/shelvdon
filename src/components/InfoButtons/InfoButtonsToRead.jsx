@@ -6,10 +6,12 @@ import { faCircleCheck } from '@fortawesome/free-solid-svg-icons'
 import { faTrash } from '@fortawesome/free-solid-svg-icons'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import Swal from 'sweetalert2'
+import BookShouldBeDisabled from '../../helper/BookShouldBeDisabled'
+
 
 
 function InfoButtonsToRead({book}) {
-  const { removeBookFromToRead, addBookToFinished } = useContext(GlobalContext)
+  const { removeBookFromToRead, addBookToFinished, finished } = useContext(GlobalContext)
 
   const handleAddBtn = (book) => {
     Swal.fire({
@@ -45,7 +47,7 @@ function InfoButtonsToRead({book}) {
 
   return (
     <div className="info-buttons-finished">
-          <button onClick={() => {addBookToFinished(book)}}><FontAwesomeIcon icon={faCircleCheck} /></button>
+          <button disabled={BookShouldBeDisabled(book, finished)} onClick={() => {handleAddBtn(book)}}><FontAwesomeIcon icon={faCircleCheck} /></button>
           <button className='btns' data-hover="Remove from list" onClick={() => { handleDeleteBtn(book) }}><FontAwesomeIcon icon={faTrash} /></button>
           <button>
             <a href={book.url} className='link' target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faPlus} /></a>

@@ -1,6 +1,7 @@
 import React from 'react'
 import './BookFinishedCard.css'
 
+
 import InfoButtonsFinished from '../InfoButtons/InfoButtonsFinished'
 import InfoButtonsFavorites from '../InfoButtons/InfoButtonsFavorites'
 import InfoButtonsToRead from '../InfoButtons/InfoButtonsToRead'

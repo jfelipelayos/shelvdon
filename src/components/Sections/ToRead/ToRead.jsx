@@ -5,7 +5,7 @@ import { BookFinishedCard } from '../../BookFinishedCard/BookFinishedCard'
 import EmptyList from '../../EmptyList/EmptyList'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBroom } from '@fortawesome/free-solid-svg-icons'
-import { faCircleCheck } from '@fortawesome/free-solid-svg-icons'
+
 
 import "../../../styles/Sections.css";
 

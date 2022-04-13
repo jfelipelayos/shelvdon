@@ -6,10 +6,12 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { faTrash } from '@fortawesome/free-solid-svg-icons'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import Swal from 'sweetalert2'
+import BookShouldBeDisabled from '../../helper/BookShouldBeDisabled'
+
 
 
 function InfoButtonsFinished({book}) {
-  const { removeBookFromFinished, addBookToFavorites } = useContext(GlobalContext)
+  const { removeBookFromFinished, addBookToFavorites, finished } = useContext(GlobalContext)
 
   const handleAddBtn = (book) => {
     Swal.fire({
@@ -19,7 +21,10 @@ function InfoButtonsFinished({book}) {
       showConfirmButton: false,
       timer: 1500
     })
-    addBookToFavorites(book)
+
+    if (BookShouldBeDisabled(book, finished)) {
+      addBookToFavorites(book)
+    }
   }
 
   const handleDeleteBtn = (book) => {
