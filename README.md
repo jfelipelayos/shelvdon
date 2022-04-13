@@ -5,7 +5,7 @@
 ## Features
 
 - Authentication
-- Book lits managment
+- Book lists manager
     - Favorite books
     - Books to read
     - Finished Books
