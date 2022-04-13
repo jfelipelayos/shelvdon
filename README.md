@@ -1,5 +1,5 @@
 
-![Shelvdon Logo](./src/assets/Shelvdon-icon.png)
+![Shelvdon Logo](src/assets/images/Shelvdon-icon.png)
 📖 Book lists manager
 
 ## Features
