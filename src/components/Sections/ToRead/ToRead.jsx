@@ -5,9 +5,11 @@ import { BookFinishedCard } from '../../BookFinishedCard/BookFinishedCard'
 import EmptyList from '../../EmptyList/EmptyList'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBroom } from '@fortawesome/free-solid-svg-icons'
+
+
 import "../../../styles/Sections.css";
 
-export const ToRead = () => {
+export const ToRead = ({currentView}) => {
   const { toread } = useContext(GlobalContext)
   let indexedList = {};
   let [index, setIndex] = useState('');
@@ -44,10 +46,10 @@ export const ToRead = () => {
         {indexedList[index]?.length > 0 ? (
           <ul>
             {indexedList[index]?.map((book) => (
-              <BookFinishedCard book={book} />
+              <BookFinishedCard currentView={currentView} book={book} />
             ))}
           </ul>
-        ) : (<EmptyList index={index} list = {toread}/>)}
+        ) : (<EmptyList currentView={currentView} index={index} list = {toread}/>)}
       </div>
     </div>
   )

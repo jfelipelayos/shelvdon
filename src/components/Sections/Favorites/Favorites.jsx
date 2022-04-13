@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBroom } from '@fortawesome/free-solid-svg-icons'
 import "../../../styles/Sections.css";
 
-export const Favorites = () => {
+export const Favorites = ({currentView}) => {
   const { favorites: favorite } = useContext(GlobalContext)
   let indexedList = {};
   let [index, setIndex] = useState('');
@@ -43,10 +43,10 @@ export const Favorites = () => {
         {indexedList[index]?.length > 0 ? (
           <ul>
             {indexedList[index]?.map((book) => (
-              <BookFinishedCard book={book} />
+              <BookFinishedCard currentView={currentView} book={book} />
             ))}
           </ul>
-        ) : (<EmptyList index={index} list = {favorite}/>)}
+        ) : (<EmptyList currentView={currentView} index={index} list = {favorite}/>)}
       </div>
     </div>
   )
