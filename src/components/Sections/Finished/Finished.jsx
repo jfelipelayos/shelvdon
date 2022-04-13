@@ -14,7 +14,7 @@ import EmptyList from "../../EmptyList/EmptyList";
 import "../../../styles/Sections.css";
 
 
-export const Finished = () => {
+export const Finished = ({currentView}) => {
   const { finished } = useContext(GlobalContext);
   let indexedList = {};
   let [index, setIndex] = useState('');
@@ -49,10 +49,10 @@ export const Finished = () => {
         {indexedList[index]?.length > 0 ? (
           <ul>
             {indexedList[index]?.map((book) => (
-              <BookFinishedCard book={book} />
+              <BookFinishedCard currentView={currentView} book={book} />
             ))}
           </ul>
-        ) : (<EmptyList index={index} list = {finished}/>)}
+        ) : (<EmptyList currentView={currentView} index={index} list = {finished}/>)}
       </div>
     </div>
   );
