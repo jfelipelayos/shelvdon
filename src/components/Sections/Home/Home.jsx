@@ -28,7 +28,6 @@ export const Home = () => {
     axios
       .request(options)
       .then(function (response) {
-        console.log(response.data);
         setMoviesData(response.data);
         setIsLoading(false);
       })
