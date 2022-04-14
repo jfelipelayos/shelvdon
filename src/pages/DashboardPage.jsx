@@ -27,9 +27,9 @@ export default function DashboardPage(){
           <ul className='mainview-menu'>
             {
               currentView === 'home' ? (<Home/>) : 
-              currentView === 'favorites' ? (<Favorites/>) :
-              currentView === 'toread' ? (<ToRead/>) :
-              currentView === 'finished' ? (<Finished/>) :
+              currentView === 'favorites' ? (<Favorites currentView={currentView}/>) :
+              currentView === 'toread' ? (<ToRead currentView={currentView}/>) :
+              currentView === 'finished' ? (<Finished currentView={currentView}/>) :
               currentView === 'search' ? (<Search/>) : navigate("/login")
             }
           </ul>

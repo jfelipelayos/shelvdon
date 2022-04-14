@@ -18,7 +18,6 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons'
 export const BookResultCard = ({book, isFinished}) => {
    const { toread, finished, addBookToToRead, addBookToFinished, removeBookFromFinished  } = useContext(GlobalContext)
 
-   console.log(book);
 
   return (
     <li key={book.book_id} className="book-card">

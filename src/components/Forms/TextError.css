@@ -1,0 +1,11 @@
+.validation-error-message{
+    color: #990000;
+    font-weight: bold; 
+}
+
+@media screen and (max-width: 376px) {
+    .validation-error-message{
+        font-size: 9px;
+        margin-top: unset;
+    }
+}
