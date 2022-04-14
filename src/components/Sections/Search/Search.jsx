@@ -37,7 +37,7 @@ export const Search = () => {
       url: `https://hapi-books.p.rapidapi.com/search/${bookName}`,
       headers: {
         'x-rapidapi-host': 'hapi-books.p.rapidapi.com',
-        'x-rapidapi-key': '991a7f0984msh3f3099a0170df8bp19fd75jsn273cadcdc26d'
+        'x-rapidapi-key': 'f8f6266ad8mshb9452ab8d3f306ap12014fjsne946f0c8d3a8',
       }
     };
 

@@ -1,9 +1,15 @@
 .mainview {
   display: flex;
-  width: 100%;
+  width: 80vw;
 }
 
 .mainview-menu {
   width: 100%;
   padding: 0;
+}
+
+@media screen and (max-width:550px) {
+  .mainview {
+    width: 95vw;
+  }
 }
