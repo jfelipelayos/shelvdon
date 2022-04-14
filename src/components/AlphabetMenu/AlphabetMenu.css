@@ -1,3 +1,7 @@
+hr{
+    width:80vw;
+}
+
 .alphabet-menu{
     margin-left:2.8%; 
     font-weight: bold;
@@ -8,4 +12,9 @@
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+}
+
+.alphabet-letter-container{
+    background:white;
+    width:80vw; 
 }
