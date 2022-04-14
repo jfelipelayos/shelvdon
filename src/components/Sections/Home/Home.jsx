@@ -59,7 +59,7 @@ export const Home = () => {
             marginTop: 64,
           }}
         >
-          <Carousel show={3} infiniteLoop={true}>
+          <Carousel infiniteLoop={true}>
             {booksData.map((book) => (
               <div key={book.book_id}>
                 <div style={{ padding: 8 }}>

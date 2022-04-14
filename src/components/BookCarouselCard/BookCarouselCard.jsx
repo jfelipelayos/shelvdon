@@ -22,8 +22,8 @@ export const BookCarouselCard = ({ book }) => {
       <img
         src={book.cover}
         // style={{ width: 'auto', height: '16rem' }}
-        style={{ width: '100%' }}
-        // style={{ width: '300px' }}
+        // style={{ width: '100%' }}
+        style={{ width: '300px' }}
         alt="..."
       />
       {/* <div className="card-body"> */}
