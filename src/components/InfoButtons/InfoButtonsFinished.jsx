@@ -52,8 +52,7 @@ function InfoButtonsFinished({book}) {
     <div className="info-buttons-finished">
           <button className='btns' data-hover="Add to favorites" onClick={() => { handleAddBtn(book) }}><FontAwesomeIcon icon={faHeart} /></button>
           <button className='btns' data-hover="Remove from list" onClick={() => { handleDeleteBtn(book) }}><FontAwesomeIcon icon={faTrash} /></button>
-          <button
-            onClick={() => { removeBookFromFinished(book) }}>
+          <button>
             <a href={book.url} className='link' target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faPlus} /></a>
           </button>
     </div>
