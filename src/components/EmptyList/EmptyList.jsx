@@ -12,7 +12,7 @@ export default function EmptyList(props) {
         return <h2>Empty List</h2>;
       }
       return <section>{props.list.map((book) => (
-        <BookFinishedCard currentView={props.currentView} book={book} />
+        <BookFinishedCard currentView={props.currentView} book={book} key={book.book_id} />
       ))
         }</section>    
 }
