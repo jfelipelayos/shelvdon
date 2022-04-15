@@ -8,34 +8,33 @@ import { GlobalContext } from '../../context/GlobalState';
 //@component
 import BookShouldBeDisabled from '../../helper/BookShouldBeDisabled';
 
-export const BookCarouselCard = ({ book }) => {
-  const { favorite, addBookToFavorites, toread, addBookToToRead } =
+export const BookCarouselCard = ({ book, title }) => {
+  const { favorites, addBookToFavorites, toread, addBookToToRead } =
     useContext(GlobalContext);
 
   return (
-    <div
-      key={book.book_id}
-      // className="card m-auto"
-      // style={{ width: '16rem', height: 'auto' }}
-      // style={{ width: '100%' }}
-    >
+    <div className="card m-2 shadow-sm" style={{ height: '28rem' }}>
       <img
         src={book.cover}
-        // style={{ width: 'auto', height: '16rem' }}
-        // style={{ width: '100%' }}
-        style={{ width: '300px' }}
+        style={{ width: '100%', height: '12rem' }}
         alt="..."
       />
-      {/* <div className="card-body"> */}
-      <div >
-        <h5 className="card-title">{book.winning_category}</h5>
-        <p className="card-text text-truncate">{book.name}</p>
+      <div className="card-body">
+        <h5
+          className=" fs-6 text-uppercase text-center mb-2"
+          style={{ height: 'auto' }}
+        >
+          {book[title]}
+        </h5>
+        <p className="card-text fs-6 text-center " style={{ height: 'auto' }}>
+          {book.name.length > 40 ? book.name.slice(0, 40) + '...' : book.name}
+        </p>
       </div>
-      <div className="card-footer text-center py-2">
+      <div className="text-center py-2">
         <button
-          disabled={BookShouldBeDisabled(book, favorite)}
+          disabled={BookShouldBeDisabled(book, favorites)}
           className={
-            BookShouldBeDisabled(book, favorite)
+            BookShouldBeDisabled(book, favorites)
               ? 'btn btn-outline-secondary my-1 btn-sm'
               : 'btn btn-outline-primary my-1 btn-sm'
           }

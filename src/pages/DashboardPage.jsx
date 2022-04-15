@@ -13,9 +13,9 @@ export default function DashboardPage(){
   let navigate = useNavigate();
 
   useEffect(()=>{
-    // if(!sessionStorage.getItem('parsley')){
-    //   navigate("/login");
-    // }
+    if(!sessionStorage.getItem('parsley')){
+      navigate("/login");
+    }
   }, []);   
 
     const [currentView, setCurrentView] = useState('home');    
