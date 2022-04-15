@@ -62,7 +62,8 @@ function Carousel({ url, title }) {
       // 'x-rapidapi-key': 'eac11bbe89msh89fc5e8eafec9efp1a3f07jsnc1eb77c9c50a',
       // 'x-rapidapi-key': '991a7f0984msh3f3099a0170df8bp19fd75jsn273cadcdc26d',
       // 'x-rapidapi-key': 'f8f6266ad8mshb9452ab8d3f306ap12014fjsne946f0c8d3a8',
-      'x-rapidapi-key': '1713f17896mshb24e8a79a109b29p17d705jsn88bb6f82bb66',
+      //'x-rapidapi-key': '1713f17896mshb24e8a79a109b29p17d705jsn88bb6f82bb66',
+      'x-rapidapi-key':'d7a93c83cbmshe9b4675aa225306p18dbfejsne73dd7704a4c'
     },
   };
 
