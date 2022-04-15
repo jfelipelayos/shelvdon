@@ -3,7 +3,7 @@ import './AlphabetMenu.css'
 
 export default function AlphabetMenu({ sendDataToParent }) {
     let indexes = [...Array(26)].map((_, i) => String.fromCharCode(i + 97).toUpperCase());
-    
+
   return (
     <div style={{width:'85vw', background:'white'}}>
         <hr style={{width:'85vw'}}/>

@@ -1,0 +1,488 @@
+{
+  "romance": [
+    {
+      "book_id": 54985743,
+      "name": "People We Meet on Vacation",
+      "author": "Emily Henr",
+      "votes": 88755,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1618913179l/54985743.jpg",
+      "url": "https://www.goodreads.com/book/show/54985743-people-we-meet-on-vacation?from_choice=true"
+    },
+    {
+      "book_id": 56732449,
+      "name": "The Love Hypothesis",
+      "author": "Ali Hazelwoo",
+      "votes": 88192,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1611937942l/56732449.jpg",
+      "url": "https://www.goodreads.com/book/show/56732449-the-love-hypothesis?from_choice=true"
+    },
+    {
+      "book_id": 54860443,
+      "name": "One Last Stop",
+      "author": "Casey McQuisto",
+      "votes": 54845,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1598019346l/54860443.jpg",
+      "url": "https://www.goodreads.com/book/show/54860443-one-last-stop?from_choice=true"
+    },
+    {
+      "book_id": 57190892,
+      "name": "The Spanish Love Deception",
+      "author": "Elena  Arma",
+      "votes": 40504,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1614122544l/57190892._SY475_.jpg",
+      "url": "https://www.goodreads.com/book/show/57190892-the-spanish-love-deception?from_choice=true"
+    },
+    {
+      "book_id": 53914936,
+      "name": "Act Your Age, Eve Brown",
+      "author": "Talia Hibber",
+      "votes": 22992,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1598543092l/53914936.jpg",
+      "url": "https://www.goodreads.com/book/show/53914936-act-your-age-eve-brown?from_choice=true"
+    },
+    {
+      "book_id": 56554626,
+      "name": "The Ex Hex",
+      "author": "Erin Sterlin",
+      "votes": 22140,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1619305366l/56554626.jpg",
+      "url": "https://www.goodreads.com/book/show/56554626-the-ex-hex?from_choice=true"
+    },
+    {
+      "book_id": 54659771,
+      "name": "Neon Gods",
+      "author": "Katee Rober",
+      "votes": 22046,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1610505010l/54659771.jpg",
+      "url": "https://www.goodreads.com/book/show/54659771-neon-gods?from_choice=true"
+    },
+    {
+      "book_id": 58235157,
+      "name": "Seven Days in June",
+      "author": "Tia William",
+      "votes": 20052,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1622563621l/58235157._SY475_.jpg",
+      "url": "https://www.goodreads.com/book/show/58235157-seven-days-in-june?from_choice=true"
+    },
+    {
+      "book_id": 55659629,
+      "name": "It Happened One Summer",
+      "author": "Tessa Baile",
+      "votes": 19674,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1604991895l/55659629.jpg",
+      "url": "https://www.goodreads.com/book/show/55659629-it-happened-one-summer?from_choice=true"
+    },
+    {
+      "book_id": 55692620,
+      "name": "The Soulmate Equation",
+      "author": "Christina Laure",
+      "votes": 19337,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1607349080l/55692620.jpg",
+      "url": "https://www.goodreads.com/book/show/55692620-the-soulmate-equation?from_choice=true"
+    },
+    {
+      "book_id": 50052386,
+      "name": "The Heart Principle",
+      "author": "Helen Hoan",
+      "votes": 6919,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1628154285l/50052386._SY475_.jpg",
+      "url": "https://www.goodreads.com/book/show/50052386-the-heart-principle?from_choice=true"
+    },
+    {
+      "book_id": 56293873,
+      "name": "The Road Trip",
+      "author": "Beth O'Lear",
+      "votes": 6303,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1612889142l/56293873.jpg",
+      "url": "https://www.goodreads.com/book/show/56293873-the-road-trip?from_choice=true"
+    },
+    {
+      "book_id": 56898248,
+      "name": "The Charm Offensive",
+      "author": "Alison Cochru",
+      "votes": 4689,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1628703464l/56898248.jpg",
+      "url": "https://www.goodreads.com/book/show/56898248-the-charm-offensive?from_choice=true"
+    },
+    {
+      "book_id": 54896882,
+      "name": "Life's Too Short",
+      "author": "Abby Jimene",
+      "votes": 4231,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1617718207l/54896882.jpg",
+      "url": "https://www.goodreads.com/book/show/54896882-life-s-too-short?from_choice=true"
+    },
+    {
+      "book_id": 45553600,
+      "name": "Second First Impressions",
+      "author": "Sally  Thorn",
+      "votes": 3166,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1617153142l/45553600._SY475_.jpg",
+      "url": "https://www.goodreads.com/book/show/45553600-second-first-impressions?from_choice=true"
+    },
+    {
+      "book_id": 53382168,
+      "name": "The Ex Talk",
+      "author": "Rachel Lynn Solomo",
+      "votes": 2954,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1590351351l/53382168.jpg",
+      "url": "https://www.goodreads.com/book/show/53382168-the-ex-talk?from_choice=true"
+    },
+    {
+      "book_id": 55904454,
+      "name": "While We Were Dating",
+      "author": "Jasmine Guillor",
+      "votes": 2682,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1612384542l/55904454._SY475_.jpg",
+      "url": "https://www.goodreads.com/book/show/55904454-while-we-were-dating?from_choice=true"
+    },
+    {
+      "book_id": 54326395,
+      "name": "The Dating Plan",
+      "author": "Sara Desa",
+      "votes": 2202,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1595387142l/54326395.jpg",
+      "url": "https://www.goodreads.com/book/show/54326395-the-dating-plan?from_choice=true"
+    },
+    {
+      "book_id": 54304013,
+      "name": "Shipped",
+      "author": "Angie Hockma",
+      "votes": 2095,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1609080728l/54304013.jpg",
+      "url": "https://www.goodreads.com/book/show/54304013-shipped?from_choice=true"
+    },
+    {
+      "book_id": 52057698,
+      "name": "How to Fail at Flirting",
+      "author": "Denise  William",
+      "votes": 2080,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1637199152l/52057698._SY475_.jpg",
+      "url": "https://www.goodreads.com/book/show/52057698-how-to-fail-at-flirting?from_choice=true"
+    }
+  ],
+  "fantasy": [
+    {
+      "book_id": 53138095,
+      "name": "A ​Court of Silver Flames",
+      "author": "Sarah J. Maa",
+      "votes": 111498,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1602570691l/53138095.jpg",
+      "url": "https://www.goodreads.com/book/show/53138095-a-court-of-silver-flames?from_choice=true"
+    },
+    {
+      "book_id": 53205888,
+      "name": "Under the Whispering Door",
+      "author": "T.J. Klun",
+      "votes": 56324,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1597281498l/53205888.jpg",
+      "url": "https://www.goodreads.com/book/show/53205888-under-the-whispering-door?from_choice=true"
+    },
+    {
+      "book_id": 55240343,
+      "name": "The ​Crown of Gilded Bones",
+      "author": "Jennifer L. Armentrou",
+      "votes": 47241,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1606759553l/55240343._SY475_.jpg",
+      "url": "https://www.goodreads.com/book/show/55240343-the-crown-of-gilded-bones?from_choice=true"
+    },
+    {
+      "book_id": 55077538,
+      "name": "She Who Became the Sun",
+      "author": "Shelley Parker-Cha",
+      "votes": 28661,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1605538291l/55077538.jpg",
+      "url": "https://www.goodreads.com/book/show/55077538-she-who-became-the-sun?from_choice=true"
+    },
+    {
+      "book_id": 54860614,
+      "name": "Ariadne",
+      "author": "Jennifer Sain",
+      "votes": 27730,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1601959039l/54860614._SY475_.jpg",
+      "url": "https://www.goodreads.com/book/show/54860614-ariadne?from_choice=true"
+    },
+    {
+      "book_id": 55559887,
+      "name": "The Last Graduate",
+      "author": "Naomi Novi",
+      "votes": 24089,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1604391810l/55559887.jpg",
+      "url": "https://www.goodreads.com/book/show/55559887-the-last-graduate?from_choice=true"
+    },
+    {
+      "book_id": 56898179,
+      "name": "The Book of Magic",
+      "author": "Alice Hoffma",
+      "votes": 17570,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1631120142l/56898179.jpg",
+      "url": "https://www.goodreads.com/book/show/56898179-the-book-of-magic?from_choice=true"
+    },
+    {
+      "book_id": 53438195,
+      "name": "The Witch's Heart",
+      "author": "Genevieve Gorniche",
+      "votes": 15892,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1593104643l/53438195.jpg",
+      "url": "https://www.goodreads.com/book/show/53438195-the-witch-s-heart?from_choice=true"
+    },
+    {
+      "book_id": 56898076,
+      "name": "The Inheritance of Orquídea Divina",
+      "author": "Zoraida Córdov",
+      "votes": 14992,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1621011341l/56898076.jpg",
+      "url": "https://www.goodreads.com/book/show/56898076-the-inheritance-of-orqu-dea-divina?from_choice=true"
+    },
+    {
+      "book_id": 52694527,
+      "name": "The Shadow of the Gods",
+      "author": "John Gwynn",
+      "votes": 14140,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1610375894l/52694527._SY475_.jpg",
+      "url": "https://www.goodreads.com/book/show/52694527-the-shadow-of-the-gods?from_choice=true"
+    },
+    {
+      "book_id": 53418394,
+      "name": "For the Wolf",
+      "author": "Hannah F. Whitte",
+      "votes": 5306,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1602020995l/53418394.jpg",
+      "url": "https://www.goodreads.com/book/show/53418394-for-the-wolf?from_choice=true"
+    },
+    {
+      "book_id": 50523477,
+      "name": "The Jasmine Throne",
+      "author": "Tasha Sur",
+      "votes": 4740,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1603885729l/50523477._SY475_.jpg",
+      "url": "https://www.goodreads.com/book/show/50523477-the-jasmine-throne?from_choice=true"
+    },
+    {
+      "book_id": 55169019,
+      "name": "The Chosen and the Beautiful",
+      "author": "Nghi V",
+      "votes": 4185,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1620400751l/55169019._SY475_.jpg",
+      "url": "https://www.goodreads.com/book/show/55169019-the-chosen-and-the-beautiful?from_choice=true"
+    },
+    {
+      "book_id": 55077706,
+      "name": "A Master of Djinn",
+      "author": "P. Djèlí Clar",
+      "votes": 3790,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1600715143l/55077706.jpg",
+      "url": "https://www.goodreads.com/book/show/55077706-a-master-of-djinn?from_choice=true"
+    },
+    {
+      "book_id": 51530580,
+      "name": "Malice",
+      "author": "Heather   Walte",
+      "votes": 3212,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1597242210l/51530580.jpg",
+      "url": "https://www.goodreads.com/book/show/51530580-malice?from_choice=true"
+    },
+    {
+      "book_id": 55276504,
+      "name": "The Hidden Palace",
+      "author": "Helene Wecke",
+      "votes": 3082,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1606165680l/55276504.jpg",
+      "url": "https://www.goodreads.com/book/show/55276504-the-hidden-palace?from_choice=true"
+    },
+    {
+      "book_id": 48915408,
+      "name": "The Wolf and the Woodsman",
+      "author": "Ava Rei",
+      "votes": 2705,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1614100814l/48915408._SY475_.jpg",
+      "url": "https://www.goodreads.com/book/show/48915408-the-wolf-and-the-woodsman?from_choice=true"
+    },
+    {
+      "book_id": 56179356,
+      "name": "A Spindle Splintered",
+      "author": "Alix E. Harro",
+      "votes": 2340,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1611862560l/56179356.jpg",
+      "url": "https://www.goodreads.com/book/show/56179356-a-spindle-splintered?from_choice=true"
+    },
+    {
+      "book_id": 48915089,
+      "name": "Sorrowland",
+      "author": "Rivers Solomo",
+      "votes": 2326,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1607528602l/48915089.jpg",
+      "url": "https://www.goodreads.com/book/show/48915089-sorrowland?from_choice=true"
+    },
+    {
+      "book_id": 54467051,
+      "name": "The Unbroken",
+      "author": "C.L. Clar",
+      "votes": 1451,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1595284077l/54467051.jpg",
+      "url": "https://www.goodreads.com/book/show/54467051-the-unbroken?from_choice=true"
+    }
+  ],
+  "poetry": [
+    {
+      "book_id": 56914101,
+      "name": "The Hill We Climb",
+      "author": "Amanda Gorma",
+      "votes": 49251,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1612178266l/56914101.jpg",
+      "url": "https://www.goodreads.com/book/show/56914101-the-hill-we-climb?from_choice=true"
+    },
+    {
+      "book_id": 54359466,
+      "name": "Black Girl, Call Home",
+      "author": "Jasmine Man",
+      "votes": 13407,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1605310476l/54359466.jpg",
+      "url": "https://www.goodreads.com/book/show/54359466-black-girl-call-home?from_choice=true"
+    },
+    {
+      "book_id": 54335207,
+      "name": "Shine your Icy Crown",
+      "author": "Amanda Lovelac",
+      "votes": 11579,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1601825190l/54335207.jpg",
+      "url": "https://www.goodreads.com/book/show/54335207-shine-your-icy-crown?from_choice=true"
+    },
+    {
+      "book_id": 58464584,
+      "name": "You Better Be Lightning",
+      "author": "Andrea Gibso",
+      "votes": 11388,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1625108383l/58464584._SY475_.jpg",
+      "url": "https://www.goodreads.com/book/show/58464584-you-better-be-lightning?from_choice=true"
+    },
+    {
+      "book_id": 57007429,
+      "name": "I Hope This Finds You Well",
+      "author": "Kate Bae",
+      "votes": 10293,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1625580074l/57007429._SY475_.jpg",
+      "url": "https://www.goodreads.com/book/show/57007429-i-hope-this-finds-you-well?from_choice=true"
+    },
+    {
+      "book_id": 55659276,
+      "name": "Where Hope Comes From",
+      "author": "Nikita Gil",
+      "votes": 9184,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1607783800l/55659276._SY475_.jpg",
+      "url": "https://www.goodreads.com/book/show/55659276-where-hope-comes-from?from_choice=true"
+    },
+    {
+      "book_id": 56802114,
+      "name": "Goldenrod",
+      "author": "Maggie  Smit",
+      "votes": 8950,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1620951436l/56802114.jpg",
+      "url": "https://www.goodreads.com/book/show/56802114-goldenrod?from_choice=true"
+    },
+    {
+      "book_id": 50498335,
+      "name": "Me",
+      "author": "Amber McBrid",
+      "votes": 6933,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1603796610l/50498335.jpg",
+      "url": "https://www.goodreads.com/book/show/50498335-me?from_choice=true"
+    },
+    {
+      "book_id": 54335204,
+      "name": "Clarity & Connection",
+      "author": "Yung Puebl",
+      "votes": 6889,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1611502539l/54335204.jpg",
+      "url": "https://www.goodreads.com/book/show/54335204-clarity-connection?from_choice=true"
+    },
+    {
+      "book_id": 54416144,
+      "name": "Home Is Not a Country",
+      "author": "Safia Elhill",
+      "votes": 6658,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1600022140l/54416144.jpg",
+      "url": "https://www.goodreads.com/book/show/54416144-home-is-not-a-country?from_choice=true"
+    },
+    {
+      "book_id": 56950454,
+      "name": "Look Mom I’m a Poet",
+      "author": "Andrew Shaffe",
+      "votes": 2371,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1612469538l/56950454._SY475_.jpg",
+      "url": "https://www.goodreads.com/book/show/56950454-look-mom-i-m-a-poet?from_choice=true"
+    },
+    {
+      "book_id": 53240799,
+      "name": "If I Tell You the Truth",
+      "author": "Jasmin Kau",
+      "votes": 2355,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1592843884l/53240799.jpg",
+      "url": "https://www.goodreads.com/book/show/53240799-if-i-tell-you-the-truth?from_choice=true"
+    },
+    {
+      "book_id": 54287653,
+      "name": "How Far You Have Come",
+      "author": "Morgan Harper Nichol",
+      "votes": 2199,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1606941062l/54287653._SY475_.jpg",
+      "url": "https://www.goodreads.com/book/show/54287653-how-far-you-have-come?from_choice=true"
+    },
+    {
+      "book_id": 51135126,
+      "name": "I'll Fly Away",
+      "author": "Rudy Francisc",
+      "votes": 2137,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1586817760l/51135126.jpg",
+      "url": "https://www.goodreads.com/book/show/51135126-i-ll-fly-away?from_choice=true"
+    },
+    {
+      "book_id": 54419215,
+      "name": "Chlorine Sky",
+      "author": "Mahogany L. Brown",
+      "votes": 2084,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1595815459l/54419215.jpg",
+      "url": "https://www.goodreads.com/book/show/54419215-chlorine-sky?from_choice=true"
+    },
+    {
+      "book_id": 54482759,
+      "name": "Call Me Athena",
+      "author": "Colby Cedar Smit",
+      "votes": 2042,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1607456965l/54482759._SX318_.jpg",
+      "url": "https://www.goodreads.com/book/show/54482759-call-me-athena?from_choice=true"
+    },
+    {
+      "book_id": 53402145,
+      "name": "American Melancholy",
+      "author": "Joyce Carol Oate",
+      "votes": 2023,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1594617555l/53402145.jpg",
+      "url": "https://www.goodreads.com/book/show/53402145-american-melancholy?from_choice=true"
+    },
+    {
+      "book_id": 55829991,
+      "name": "I am The Rage",
+      "author": "Martina McGowa",
+      "votes": 1684,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1609766560l/55829991.jpg",
+      "url": "https://www.goodreads.com/book/show/55829991-i-am-the-rage?from_choice=true"
+    },
+    {
+      "book_id": 56462368,
+      "name": "When We Make It",
+      "author": "Elisabet Velasque",
+      "votes": 1601,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1617468430l/56462368.jpg",
+      "url": "https://www.goodreads.com/book/show/56462368-when-we-make-it?from_choice=true"
+    },
+    {
+      "book_id": 53398748,
+      "name": "God I Feel Modern Tonight",
+      "author": "Catherine Cohe",
+      "votes": 937,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1602562964l/53398748.jpg",
+      "url": "https://www.goodreads.com/book/show/53398748-god-i-feel-modern-tonight?from_choice=true"
+    }
+  ]
+}

@@ -1,49 +1,52 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 //@vendor
-import axios from 'axios';
 
 //@components
-import { AdjustedCarousel } from '../../AdjustedCarousel/AdjustedCarousel';
+import Carousel from '../../Carousel/Carousel';
 
 //@style
 import './Home.css';
 
 export const Home = () => {
-  const [isLoading, setIsLoading] = useState(false);
-  const [moviesData, setMoviesData] = useState([]);
-
-  const options = {
-    method: 'GET',
-    url: `https://hapi-books.p.rapidapi.com/top/2021`,
-    headers: {
-      'x-rapidapi-host': 'hapi-books.p.rapidapi.com',
-      'x-rapidapi-key': 'f8f6266ad8mshb9452ab8d3f306ap12014fjsne946f0c8d3a8',
-    },
-  };
-
-  useEffect(() => {
-    setIsLoading(true);
-
-    axios
-      .request(options)
-      .then(function (response) {
-        setMoviesData(response.data);
-        setIsLoading(false);
-      })
-      .catch(function (error) {
-        console.error(error);
-        setIsLoading(false);
-      });
-  }, []);
-
   return (
-    <div className="mt-4" style={{ maxWidth: '90%' }}>
-      {isLoading ? (
-        <div>Loading...</div>
-      ) : (
-        <AdjustedCarousel moviesData={moviesData} />
-      )}
-    </div>
+    <>
+      <div className="mt-3">
+        <h2 className="text-center ">Awarded Books</h2>
+      </div>
+      <div className="container text-center" style={{ width: '100%' }}>
+        <Carousel
+          url={'https://hapi-books.p.rapidapi.com/top/2021'}
+          title={'winning_category'}
+        />
+      </div>
+      <div className="mt-4">
+        <h2 className="text-center">Romance</h2>
+      </div>
+      <div className="container text-center" style={{ width: '100%' }}>
+        <Carousel
+          url={'https://hapi-books.p.rapidapi.com/nominees/romance/2021'}
+          title={'author'}
+        />
+      </div>
+      <div className="mt-4">
+        <h2 className="text-center">Fantasy</h2>
+      </div>
+      <div className="container text-center" style={{ width: '100%' }}>
+        <Carousel
+          url={'https://hapi-books.p.rapidapi.com/nominees/fantasy/2021'}
+          title={'author'}
+        />
+      </div>
+      <div className="mt-4">
+        <h2 className="text-center">Poetry</h2>
+      </div>
+      <div className="container text-center" style={{ width: '100%' }}>
+        <Carousel
+          url={'https://hapi-books.p.rapidapi.com/nominees/poetry/2021'}
+          title={'author'}
+        />
+      </div>
+    </>
   );
 };

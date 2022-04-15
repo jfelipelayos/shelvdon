@@ -16,7 +16,7 @@ export default function DashboardPage(){
     if(!sessionStorage.getItem('parsley')){
       navigate("/login");
     }
-  });   
+  }, []);   
 
     const [currentView, setCurrentView] = useState('home');    
 
