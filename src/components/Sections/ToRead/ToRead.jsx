@@ -30,7 +30,6 @@ export const ToRead = ({currentView}) => {
 
   setIndexValues();
 
-  console.log(toread);
   return (
     <div>
       <div className="subheader-section">

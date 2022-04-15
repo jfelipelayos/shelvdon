@@ -1,10 +1,15 @@
+//@ vendor
 import React, { useContext, useState } from 'react'
 import { GlobalContext } from '../../../context/GlobalState'
 import AlphabetMenu from '../../AlphabetMenu/AlphabetMenu'
-import { BookFinishedCard } from '../../BookFinishedCard/BookFinishedCard'
-import EmptyList from '../../EmptyList/EmptyList'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBroom } from '@fortawesome/free-solid-svg-icons'
+
+//@ component
+import { BookFinishedCard } from '../../BookFinishedCard/BookFinishedCard'
+import EmptyList from '../../EmptyList/EmptyList'
+
+//@ style
 import "../../../styles/Sections.css";
 
 export const Favorites = ({currentView}) => {
@@ -22,8 +27,8 @@ export const Favorites = ({currentView}) => {
     favorite.map(i => indexedList[i.name[0]].push(i))
   }
 
-  const sendDataToParent = (index) => {
-    setIndex(index);
+  const sendDataToParent = (parentIndex) => {
+    setIndex(parentIndex);
   };
 
   setIndexValues();
@@ -36,7 +41,15 @@ export const Favorites = ({currentView}) => {
           <h2 className="subheader-title">by letter:</h2>
         ) : null}
         <h1 className="subheader-title-index">{index}</h1>
-        <button href="#clear" className="subheader-title-button" onClick={(()=>setIndex(''))}><FontAwesomeIcon icon={faBroom}/> <span className="hide-caption-button-mobile">Clear filters</span></button>
+        <button 
+          href="#clear" 
+          className="subheader-title-button" 
+          onClick={(()=>setIndex(''))}>
+            <FontAwesomeIcon icon={faBroom}/> 
+            <span className="hide-caption-button-mobile">
+              Clear filters
+            </span>
+        </button>
       </div>
       <AlphabetMenu sendDataToParent={sendDataToParent} />
       <div className="w-100 h-100 d-flex flex-row justify-content-center align-items-center subsection-list">

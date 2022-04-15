@@ -42,7 +42,6 @@ export const Search = () => {
     };
 
     axios.request(options).then(function (response) {
-      // console.log(response.data);
       setSearchResult(response.data);
       Swal.close()
     }).catch(function (error) {
