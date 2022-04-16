@@ -6,7 +6,7 @@ import './AlphabetMenu.css'
 
 export default function AlphabetMenu({ sendDataToParent }) {
     let indexes = [...Array(26)].map((_, i) => String.fromCharCode(i + 97).toUpperCase());
-    
+
   return (
     <div className='alphabet-letters-container'>
         <hr/>

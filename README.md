@@ -1,6 +1,6 @@
 
 ![Shelvdon Logo](src/assets/images/Shelvdon-icon.png)
-📖 Book lists manager
+📖📚 Book lists manager
 
 ## Features
 
