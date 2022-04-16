@@ -17,7 +17,7 @@ export default function LandingPage() {
             <h1 className="card-title">Welcome to Shelvdon</h1>
             <h3 className="card-text">Your smart friend who always knows best when it comes to having and organizing a good reading plan. The best buddy to visit new paper worlds.</h3>
             </div>
-            <button className="btn btn-success main-banner-button"><a href="/login" className="main-banner-link">Start the journey</a></button>
+            <a href="/login" className="main-banner-link"><button className="btn btn-success main-banner-button">Start the journey</button></a>
           </div>
         </div>
       </article>

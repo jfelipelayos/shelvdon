@@ -57,13 +57,7 @@ function Carousel({ url, title }) {
     url,
     headers: {
       'x-rapidapi-host': 'hapi-books.p.rapidapi.com',
-      // 'x-rapidapi-key': '29832e245cmsh84cf072a4dfae26p1d7ffajsnd0805f8691e0',
-      // 'x-rapidapi-key': 'cae01b8b10mshb91059cb2e2dee3p1340dcjsn8a0fe768097d',
-      // 'x-rapidapi-key': 'eac11bbe89msh89fc5e8eafec9efp1a3f07jsnc1eb77c9c50a',
-      // 'x-rapidapi-key': '991a7f0984msh3f3099a0170df8bp19fd75jsn273cadcdc26d',
-      // 'x-rapidapi-key': 'f8f6266ad8mshb9452ab8d3f306ap12014fjsne946f0c8d3a8',
-      //'x-rapidapi-key': '1713f17896mshb24e8a79a109b29p17d705jsn88bb6f82bb66',
-      'x-rapidapi-key':'d7a93c83cbmshe9b4675aa225306p18dbfejsne73dd7704a4c'
+      'x-rapidapi-key': 'd7a93c83cbmshe9b4675aa225306p18dbfejsne73dd7704a4c'
     },
   };
 
@@ -73,7 +67,6 @@ function Carousel({ url, title }) {
     axios
       .request(options)
       .then(function (response) {
-        console.log(response.data);
         setBooksData(response.data);
         setIsLoading(false);
       })
