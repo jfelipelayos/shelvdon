@@ -12,8 +12,8 @@
 
 ## Authors
 
-- [@Santiago Betancur](https://www.github.com/TiagoBG)
 - [@Paola Andrea](https://www.github.com/paolandrea18)
+- [@Santiago Betancur](https://www.github.com/TiagoBG)
 - [@John Uribe](https://www.github.com/johnuribe17)
 - [@Juan Rodriguez](https://www.github.com/juanrd99)
 
